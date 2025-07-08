@@ -1,0 +1,38 @@
+import LocationOnOutlined from '@mui/icons-material/LocationOnOutlined';
+import DownloadOutlined from '@mui/icons-material/DownloadOutlined';
+import EmailOutlined from '@mui/icons-material/EmailOutlined';
+import TerminalOutlined from '@mui/icons-material/TerminalOutlined';
+import ArrowForwardIos from '@mui/icons-material/ArrowForwardIos';
+import ForumOutlined from '@mui/icons-material/ForumOutlined';
+import LayersOutlined from '@mui/icons-material/LayersOutlined';
+import VerifiedOutlined from '@mui/icons-material/VerifiedOutlined';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhpIcon from '@mui/icons-material/Php';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import CodeIcon from '@mui/icons-material/Code';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+export {
+  LocationOnOutlined as LocationIcon,
+  DownloadOutlined as DownloadIcon,
+  EmailOutlined as EmailIcon,
+  TerminalOutlined as TerminalIcon,
+  ArrowForwardIos as ArrowIcon,
+  ForumOutlined as ForumIcon,
+  LayersOutlined as LayersIcon,
+  VerifiedOutlined as VerifiedIcon,
+  KeyboardArrowRight as RightArrowIcon,
+  FacebookIcon as FacebookIcon,
+  GitHubIcon as GitHubIcon,
+  LinkedInIcon as LinkedInIcon,
+  PhpIcon as PhpIcon,
+  InsertDriveFileIcon as FileIcon,
+  JavascriptIcon as JavascriptIcon,
+  CodeIcon as CodeIcon,
+  ArrowForwardIosIcon,
+};
+
+
