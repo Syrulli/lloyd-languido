@@ -12,7 +12,7 @@ const recommendationCarousel = ({ recommendationGroups }) => {
     slides.push(flattenedRecommendations.slice(i, i + (isMobile ? 1 : 2)));
   }
   return (
-    <Box data-aos="fade-up" sx={{ maxWidth: 1920, mb: 5 }}>
+    <Box data-aos="fade-up" sx={{ maxWidth: 1920, mb: 2 }}>
       <Carousel
         indicators={true}
         navButtonsAlwaysVisible={false}

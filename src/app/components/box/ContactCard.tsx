@@ -1,5 +1,5 @@
 import { Box, Button, Card, CardContent, Typography } from '@mui/material';
-import { RightArrowIcon } from '../icons/IconPack';
+import { RightArrowIcon} from '../icons/IconPack';
 
 const contactOptions = [
   {
@@ -13,7 +13,7 @@ const contactOptions = [
   {
     label: 'Schedule a call',
     href: 'https://calendly.com/lloydlanguido/30min',
-    textStyle: 'capitalize',
+    textStyle: 'none',
     fontSize: '0.7rem',
     subText: "Let's Talk",
     showIcon: true,
@@ -33,20 +33,29 @@ const ContactCard = () => {
     <Card sx={{ flex: 1 }} data-aos="fade-up" className="card-section">
       <Box
         sx={{
-          bgcolor: '#1e1e1e',
-          px: 2,
-          py: 1,
           display: 'flex',
           alignItems: 'center',
-          gap: 1,
+          backgroundColor: '#1e1e1e',
+          borderBottom: '1px solid #333',
+
         }}
       >
-        {['#ff5f56', '#ffbd2e', '#27c93f'].map((color, index) => (
-          <Box
-            key={index}
-            sx={{ width: 12, height: 12, bgcolor: color, borderRadius: '50%' }}
-          />
-        ))}
+        <Box
+          sx={{
+            backgroundColor: '#111',
+            borderRight: '1px solid #333',
+            px: 1.5,
+            py: 0.5,
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: '0.7rem',
+            }}
+          >
+            MyContact.tsx
+          </Typography>
+        </Box>
       </Box>
 
       <CardContent>
@@ -84,7 +93,7 @@ const ContactCard = () => {
                 },
               }}
             >
-              <Typography variant="body2" sx={{ textStyle, fontSize }}>
+              <Typography variant="body2" sx={{ textTransform: textStyle, fontSize }}>
                 {label}
               </Typography>
               {showIcon && <RightArrowIcon sx={{ fontSize: '1rem' }} />}

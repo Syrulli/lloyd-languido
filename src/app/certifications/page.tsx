@@ -33,7 +33,7 @@ export default function Certificate() {
                     height: 'auto',
                     p: 2,
                   }}
-                  className="section"
+                  className="card-section"
                 >
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ flex: 1 }}>
@@ -61,15 +61,15 @@ export default function Certificate() {
                             width: '110px',
                             height: '28px',
                             mt: 1,
-                            textTransform: 'capitalize',
+                            textTransform: 'none',
                             '&:hover': {
                               borderColor: 'white',
                               backgroundColor: 'rgba(255, 255, 255, 0.1)',
                             },
                           }}
                         >
-                          <Typography variant="body2" sx={{ textTransform: 'capitalize', fontSize: '0.6rem' }}>
-                            Download Certificate
+                          <Typography variant="body2" sx={{fontSize: '0.6rem' }}>
+                            Download certificate
                           </Typography>
                         </Button>
                       )}

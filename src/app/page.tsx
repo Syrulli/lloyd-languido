@@ -7,15 +7,17 @@ import TechStackAndCertifications from './components/box/TechStackAndCertificati
 import AboutMeTerminalCard from './components/box/AboutMeCard';
 import AOSInitializer from './components/aos/AOSInitializer';
 import HomeSection from './components/stack/HomeStack';
+import ProjectsSection from './components/stack/ProjectSection';
 export default function Home() {
   return (
     <>
       <AOSInitializer />
-      <HomeSection/>
+      <HomeSection />
       <SectionStack>
         <TechStackAndCertifications techStack={techStack} items={items} />
         <AboutMeTerminalCard />
-      </SectionStack >
+      </SectionStack>
+      <ProjectsSection />
       <Recommendation recommendationsGroups={recommendationsGroups} />
     </>
   );

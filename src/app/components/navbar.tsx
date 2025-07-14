@@ -27,17 +27,16 @@ const Nav = () => {
       <Button
         variant="text"
         onClick={toggleDrawer(true)}
-        sx={{ color: "white", display: { xs: "flex", sm: "none" } }}
+        sx={{ color: "white", display: { xs: "flex", sm: "none" }, }}
       >
         <MenuIcon />
       </Button>
-
       <Drawer
         open={open}
         onClose={toggleDrawer(false)}
         anchor="right"
         sx={{
-          display: { xs: "inherit", sm: "none" },
+          display: {  sm: "none" },
           "& .MuiDrawer-paper": {
             height: "100%",
             width: "80%",
@@ -104,14 +103,13 @@ const Header = () => {
         boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
       }}
     >
-      <Container maxWidth="xl" sx={{ px: { xs: 0.1, lg: 6, xl: 7 } }}>
+      <Container maxWidth="xl" sx={{ px: { xs: 0, lg: 9, xl: 7 } }}>
         <Toolbar>
           <Stack
             direction="row"
             justifyContent="space-between"
             alignItems="center"
             width="100%"
-            sx={{ px: { xs: 0, sm: 0, md: 3 } }}
           >
             <Link href="/">
               <Box
@@ -122,7 +120,7 @@ const Header = () => {
                   '&:hover': {
                     backgroundColor: 'transparent',
                   },
-                  marginLeft: { lg: 2, xl: 4 },
+                  marginLeft: { xs: 2, sm: 0, lg: 2 },
                 }}
               >
                 <Image src="/logo.png" alt="Lloyd Sydlik" width={30} height={30} priority />

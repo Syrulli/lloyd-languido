@@ -126,7 +126,7 @@ export const certificate = [
   },
 
   {
-    text: 'AMA University - Internship Certificate',
+    text: 'AMA University - Internship',
     paragraph: 'AMA University',
     badgeImage: '',
     badgeLink: '',
@@ -203,3 +203,4 @@ export const projects = [
     downloadBtn: '/certification/CPA - Programming Essentials in C++.pdf'
   },
 ];
+

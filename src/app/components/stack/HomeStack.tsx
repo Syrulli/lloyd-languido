@@ -11,7 +11,7 @@ export default function HomeSection() {
             <Box
                 sx={{
                     flex: 1,
-                    px: { xs: 2, sm: 3, md: 15, xl: 40 },
+                    px: { xs: 5, sm: 3, md: 15, xl: 40 },
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -41,6 +41,7 @@ export default function HomeSection() {
                             backgroundColor: '#305256',
                             color: 'white',
                             textTransform: 'capitalize',
+                            fontSize: '0.75rem',
                             '&:hover': {
                                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                             },
@@ -59,6 +60,7 @@ export default function HomeSection() {
                             borderColor: 'white',
                             color: 'white',
                             textTransform: 'capitalize',
+                            fontSize: '0.75rem',
                             '&:hover': {
                                 borderColor: 'white',
                                 backgroundColor: 'rgba(255, 255, 255, 0.1)',

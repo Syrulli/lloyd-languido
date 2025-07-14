@@ -10,11 +10,11 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PhpIcon from '@mui/icons-material/Php';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import CodeIcon from '@mui/icons-material/Code';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 export {
   LocationOnOutlined as LocationIcon,
   DownloadOutlined as DownloadIcon,
@@ -28,11 +28,11 @@ export {
   FacebookIcon as FacebookIcon,
   GitHubIcon as GitHubIcon,
   LinkedInIcon as LinkedInIcon,
-  PhpIcon as PhpIcon,
-  InsertDriveFileIcon as FileIcon,
   JavascriptIcon as JavascriptIcon,
   CodeIcon as CodeIcon,
   ArrowForwardIosIcon,
+  AccountTreeIcon as AccountTreeIcon,
+  InsertDriveFileOutlinedIcon as InsertDriveFileIcon
 };
 
 

@@ -21,9 +21,9 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
           </span>
         ))}
       </Box>
-      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mt: { xs: 4, sm: 3, lg: 3.4, xl: 2 } }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mt: { xs: 4, sm: 3, lg: 4, xl: 2 } }}>
         <TypographyHeader>
-          <VerifiedIcon sx={{ fontSize: 'inherit' }} /> Certifications & Badges
+          <VerifiedIcon sx={{ fontSize: 'inherit' }} /> Recent Certifications
         </TypographyHeader>
         <Button
           component="a"
@@ -34,11 +34,11 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
             textDecoration: 'none',
             color: 'inherit',
             fontSize: 10,
-            textTransform: 'capitalize',
+            textTransform: 'none',
             '&:hover': { backgroundColor: 'transparent' },
           }}
         >
-          View all <ArrowIcon sx={{ fontSize: 'inherit' }} />
+          View all <ArrowIcon sx={{ fontSize: 'inherit'}} />
         </Button>
       </Box>
       <Box sx={{ height: 245, position: 'relative' }}>
