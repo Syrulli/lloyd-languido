@@ -1,8 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Box, Card, Modal, Container, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Box, Card, Modal, Container, Typography, Grid, GridProps } from '@mui/material';
 import TypographyHeader from '../components/typography/TypographyHeader';
 import { projects } from '@/constant/app';
 import AOSInitializer from '../components/aos/AOSInitializer';
@@ -27,7 +26,7 @@ export default function Projects() {
             <Container sx={{ mt: { xs: 10, md: 12 }, px: { lg: 11 }, }}>
                 <Grid container spacing={2} justifyContent="center">
                     {projects.map((proj, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
+                        <Grid {...({ item: true, xs: 12, sm: 6, md: 4 } as GridProps)} key={index}>
                             <Card
                                 className='card-section'
                                 onClick={() => handleOpen(proj.image)}
