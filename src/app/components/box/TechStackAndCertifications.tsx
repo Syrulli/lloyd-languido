@@ -5,10 +5,13 @@ import TypographyHeader from '../typography/TypographyHeader';
 import CertificateCard from '../card/CertificateCard';
 import { LayersIcon, VerifiedIcon, ArrowIcon } from '../icons/IconPack';
 
-interface Props {
+type Props = {
   techStack: string[];
-  items: any[];
-}
+  items: {
+    text: string;
+    paragraph: string;
+  }[];
+};
 
 const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
   return (

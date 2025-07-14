@@ -5,7 +5,19 @@ import TestimonialCard from '../carousels/RecommendationCarousel';
 import MapIframe from './MapIframe';
 import ContactCard from './ContactCard';
 import { ForumIcon } from '../icons/IconPack';
-const Recommendation = ({ recommendationsGroups }: { recommendationsGroups: any[] }) => {
+
+type RecommendationItem = {
+  image: string;
+  name: string;
+  position: string;
+  text: string;
+};
+
+interface RecommendationProps {
+  recommendationsGroups: RecommendationItem[][];
+}
+
+const Recommendation: React.FC<RecommendationProps> = ({ recommendationsGroups }) => {
   return (
     <Stack
       data-aos="fade-up"
