@@ -1,9 +1,7 @@
 import React from 'react';
 import { Typography, TypographyProps } from '@mui/material';
 
-interface TypographyHeaderProps extends TypographyProps {}
-
-const TypographyHeader: React.FC<TypographyHeaderProps> = ({ children, ...props }) => {
+const TypographyHeader: React.FC<TypographyProps> = ({ children, ...props }) => {
   return (
     <Typography
       gutterBottom

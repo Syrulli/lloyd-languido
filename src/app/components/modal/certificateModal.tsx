@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, Modal, Button, Typography } from "@mui/material";
+import Image from 'next/image';
 
 const style = {
     position: "absolute",
@@ -37,7 +38,7 @@ export default function CertificateModal({
                     {title}
                 </Typography>
                 <Typography variant="body2">{description}</Typography>
-                <img src={image} alt={title} style={{ width: "100%", marginTop: "10px" }} />
+                <Image src={image} alt={title} style={{ width: "100%", marginTop: "10px" }}  />
                 <Button href={badgeLink} target="_blank" sx={{ mt: 2 }}>
                     View Badge
                 </Button>

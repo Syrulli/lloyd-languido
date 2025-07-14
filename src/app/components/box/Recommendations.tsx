@@ -5,7 +5,7 @@ import TestimonialCard from '../carousels/RecommendationCarousel';
 import MapIframe from './MapIframe';
 import ContactCard from './ContactCard';
 import { ForumIcon } from '../icons/IconPack';
-const Recommendation = ({ recommendationsGroups }: { recommendationsGroups: any[] }) => {
+const Recommendation = ({ recommendationsGroups }: { recommendationsGroups: string[] }) => {
   return (
     <Stack
       data-aos="fade-up"
