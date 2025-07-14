@@ -7,7 +7,7 @@ import { LayersIcon, VerifiedIcon, ArrowIcon } from '../icons/IconPack';
 
 interface Props {
   techStack: string[];
-  items: string[];
+  items: any[];
 }
 
 const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
