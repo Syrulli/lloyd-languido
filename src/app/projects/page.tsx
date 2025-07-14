@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import { Box, Card, Modal, Grid, Container, Typography } from '@mui/material';
+import { Box, Card, Modal, Container, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import TypographyHeader from '../components/typography/TypographyHeader';
 import { projects } from '@/constant/app';
 import AOSInitializer from '../components/aos/AOSInitializer';
