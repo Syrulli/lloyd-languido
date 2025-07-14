@@ -1,7 +1,7 @@
 'use client';
 import { Stack, Box, Typography } from '@mui/material';
 import TypographyHeader from '../typography/TypographyHeader';
-import TestimonialCard from '../carousels/TestimonialCarousel';
+import TestimonialCard from '../carousels/RecommendationCarousel';
 import MapIframe from './MapIframe';
 import ContactCard from './ContactCard';
 import { ForumIcon } from '../icons/IconPack';

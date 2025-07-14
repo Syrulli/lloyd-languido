@@ -23,6 +23,15 @@ body {
   filter: grayscale(100%) invert(100%) !important;
 }
 
+.swiper-pagination-bullet {
+  background-color: gray !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important; 
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance !important;

@@ -8,7 +8,8 @@ const CertificateCard = ({ item }) => {
       <Link href='/certifications' passHref>
         <Card
           sx={{
-            width: { md: 450, lg: 450, xl: 630 },
+            width: {lg: 450, xl: 700 },
+            height: {lg: 76, xl: 71 },
             marginBottom: 1.5,
             cursor: 'pointer',
             textDecoration: 'none',

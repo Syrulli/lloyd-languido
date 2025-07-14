@@ -2,15 +2,18 @@ import { Box, Stack, Typography, Button, } from '@mui/material';
 import { GitHubIcon, AccountTreeIcon } from '../icons/IconPack';
 import CardSwap, { Card } from '../card/CardSwap';
 import Image from 'next/image';
-export default function Home() {
+
+export default function ProjectSection() {
     return (
-        <Stack direction={{ xs: 'column', md: 'row' }}
-            alignItems="center"
-            justifyContent="space-between"
+        <Stack
+            direction={{ xs: 'column', md: 'row' }}
+            alignItems={{ xs: 'center', md: 'center' }}
             sx={{
-                maxWidth: '1025px', mx: 'auto', px: { xs: 2, sm: 4, lg: 5 },
+                maxWidth: { xs: '93%', lg: '1025px', xl: '1350px' },
+                height: { xs: '350px', lg: '450px', xl: '460px' },
+                mx: 'auto',
                 overflow: 'hidden',
-                mt: { xs: 2, sm: 4, lg: 2 },
+                mt: 2,
                 borderRadius: 2,
             }}
             className="card-section"
@@ -21,14 +24,18 @@ export default function Home() {
                     flex: 1,
                     display: 'flex',
                     flexDirection: 'column',
+                    px: { xs: 2, sm: 4, lg: 5 },
+
                 }}
             >
-                <Typography variant="h5" fontWeight="bold">
-                    Recent Projects
-                </Typography>
-                <Typography variant="body1" sx={{ fontSize: '0.88rem' }}>
-                    Bringing ideas to life through development.
-                </Typography>
+                <Box sx={{ mt: { xs: 5, }, marginRight: { xs: 9, }, }}>
+                    <Typography variant="h5" fontWeight="bold">
+                        Recent Projects
+                    </Typography>
+                    <Typography variant="body1" sx={{ fontSize: '0.88rem' }}>
+                        Bringing ideas to life through development.
+                    </Typography>
+                </Box>
                 <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
                     <Button
                         component="a"
@@ -70,12 +77,12 @@ export default function Home() {
                     </Button>
                 </Stack>
             </Box>
+
             <Box
                 sx={{
                     flex: 1,
                     height: 450,
                     position: 'relative',
-                    maxWidth: '100%',
                 }}
             >
                 <CardSwap cardDistance={60} verticalDistance={70} delay={5000}>

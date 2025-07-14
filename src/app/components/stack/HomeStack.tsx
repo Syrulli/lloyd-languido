@@ -6,30 +6,21 @@ export default function HomeSection() {
     return (
         <Stack
             direction={{ xs: 'column', md: 'row' }}
-            sx={{ mt: { xs: 15, lg: 10 }, position: 'relative' }}
+            sx={{ mt: { xs: 15, lg: 10, }, position: 'relative' }}
         >
             <Box
                 sx={{
                     flex: 1,
-                    px: { xs: 5, sm: 3, md: 15, xl: 40 },
+                    px: { xs: 5, sm: 3, lg: 15, xl: 40 },
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                 }}
             >
-                <Typography variant="h5" fontWeight="bold">
-                    Lloyd Sydlik Nim
+                <Typography variant="h5" fontWeight="bold">Lloyd Sydlik Nim</Typography>
+                <Typography variant="body1" sx={{ fontSize: '0.9rem', display: 'flex' }}><LocationIcon sx={{ fontSize: 'inherit', mr: 0.5 }} />Taguig, Philippines
                 </Typography>
-
-                <Typography variant="body1" sx={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
-                    <LocationIcon sx={{ fontSize: 'inherit', mr: 0.5 }} />
-                    Taguig, Philippines
-                </Typography>
-
-                <Typography variant="body1" sx={{ fontSize: '0.88rem' }}>
-                    Innovating across the stack to power the future.
-                </Typography>
-
+                <Typography variant="body1" sx={{ fontSize: '0.88rem' }}>Innovating across the stack to power the future.</Typography>
                 <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
                     <Button
                         component="a"
@@ -75,9 +66,7 @@ export default function HomeSection() {
 
             <Box
                 sx={{
-                    width: { xs: '100%', sm: '80%', md: '60%', lg: '33%', xl: '35%' },
-                    mx: 'auto',
-                    mt: { xs: 8, lg: 0 },
+                    width: { xs: '100%', sm: '80%', md: '60%', lg: '33%', xl: '25%' },
                     display: 'flex',
                     justifyContent: 'center',
                 }}

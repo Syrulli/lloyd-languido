@@ -5,7 +5,7 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 
 const AboutMeTerminalCard = () => {
     return (
-        <Box data-aos="fade-up" sx={{ flex: 1, display: 'flex', flexDirection: 'column', textAlign: 'left',}}>
+        <Box data-aos="fade-up" sx={{flexDirection: 'column', }}>
             <Card
                 sx={{
                     bgcolor: 'var(--section)',
@@ -31,7 +31,7 @@ const AboutMeTerminalCard = () => {
                     <Typography gutterBottom variant="body1" sx={{ color: '#B876E7', fontSize: '0.8rem' }}>
                         $ npx <span style={{ color: '#52A060' }}>create-next-app@latest about-me</span>
                     </Typography>
-                    <Typography variant="body1" sx={{ textAlign: 'justify', fontSize: '0.8rem' }}>
+                    <Typography sx={{ textAlign: 'justify', fontSize: '0.8rem' }}>
                         I'm a passionate junior full-stack developer with a strong foundation in PHP, MySQL, and JavaScript. My expertise lies in crafting custom web solutions that are both functional and visually appealing. Currently pursuing a Bachelor of Science in Information Technology (BSIT) with a major in web development at AMA University, I`ve honed my skills in both front-end and back-end development.
                         Throughout my journey, I`ve been actively exploring the intersection of web development and artificial intelligence. I`ve successfully implemented AI-powered features, such as a dental detection AI using Google`s Teachable Machine, showcasing my ability to leverage cutting-edge technologies.
                         My leadership experience is present through the leadership of a backend development team during a university competition, Appcon 2023. Moreover, working as a front-end developer through freelancing activities at Manuel L. Quezon University has helped me specialize in the design areas of Bootstrap UI/UX while ensuring smooth user experiences on almost all devices.

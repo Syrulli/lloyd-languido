@@ -5,7 +5,7 @@ interface SectionStackProps {
 }
 const SectionStack: React.FC<SectionStackProps> = ({ children }) => {
   return (
-    <Stack direction={{ xs: 'column', md: 'row' }} sx={{ mb: {xs: 5, lg: 0, xl: 5}, mt: {xs: 4, lg: 5,}, px: { xs: 2, sm: 3, lg: 15, xl: 40,}, }}>
+    <Stack direction={{ xs: 'column', md: 'row' }} sx={{px: { xs: 2, sm: 3, lg: 15, xl: 40,}, }}>
       {children}
     </Stack>
   );
