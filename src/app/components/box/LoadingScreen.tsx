@@ -1,16 +1,25 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { Box, Fade } from '@mui/material';
+import Image from 'next/image'; 
 
 const LoadingScreen = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(false);
-    }, 2000);
+    const lastLoaded = sessionStorage.getItem('homeLastLoaded');
+    const now = Date.now();
 
-    return () => clearTimeout(timer);
+    if (!lastLoaded || now - Number(lastLoaded) > 60_000) {
+      setVisible(true);
+
+      const timer = setTimeout(() => {
+        setVisible(false);
+        sessionStorage.setItem('homeLastLoaded', String(now));
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
@@ -22,18 +31,20 @@ const LoadingScreen = () => {
           left: 0,
           width: '100vw',
           height: '100vh',
-          bgcolor: '#0a0a0a',
+          bgcolor: 'var(--background-body)',
           zIndex: 9999,
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        {/* Your Logo or Image */}
-        <img
-          src="/logo.png" // Replace with your image path
+        <Image
+          src="/logo.png"
           alt="Loading..."
-          style={{ width: 100, height: 100, objectFit: 'contain' }}
+          width={100}
+          height={100}
+          style={{ objectFit: 'contain' }}
+          priority 
         />
       </Box>
     </Fade>
