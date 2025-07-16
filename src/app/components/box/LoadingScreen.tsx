@@ -4,8 +4,8 @@ import { Box, Fade } from '@mui/material';
 import Image from 'next/image';
 
 export default function LoadingWrapper({ children }: { children: React.ReactNode }) {
-  const [showLoading, setShowLoading] = useState(true); 
-  const [fadeOut, setFadeOut] = useState(false);
+  const [showLoading, setShowLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false); 
 
   useEffect(() => {
     const lastLoaded = sessionStorage.getItem('homeLastLoaded');
@@ -13,10 +13,10 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
 
     if (!lastLoaded || now - Number(lastLoaded) > 60_000) {
       const delay = 2000; 
-      const fadeDuration = 100;
+      const fadeDuration = 500; 
 
       const timer = setTimeout(() => {
-        setFadeOut(true);
+        setFadeOut(true); 
 
         setTimeout(() => {
           setShowLoading(false);
@@ -33,7 +33,7 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
   return (
     <>
       {showLoading && (
-        <Fade in={!fadeOut} timeout={100}>
+        <Fade in={!fadeOut} timeout={500}>
           <Box
             sx={{
               position: 'fixed',
