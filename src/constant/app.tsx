@@ -22,6 +22,7 @@ export const recommendationsGroups = [
     { image: '/testimonial/img-6.png', name: 'Andrew Robin', position: 'Computer Programmer at LGU SJDM Bulacan', text: '“Lloyd is an excellent junior developer combines strong foundational skills with a growth mindset, quickly adapting to new technologies, writing clean and efficient code, and actively contributing to team success through collaboration and continuous learning.”'},
 ],
 
+
 ];
 export const techStack = [
 "JavaScript",
@@ -169,16 +170,16 @@ export const timelineData = [
 
   {
     date: '2022',
-    type: 'Freelance',
+    type: 'Collaborative Freelancing',
     title: 'MLQU University',
-    description: 'Worked as a Front-End Developer on a School Management System for MLQU University. Focused on UI/UX design, developing clean and responsive user interfaces. Contributed to improving user experience and usability across key modules like student records, schedules, and admin dashboards.',
+    description: 'Worked as a front-end Developer under lazy developers, a School Management System for MLQU University. Focused on UI/UX design, developing clean and responsive user interfaces contributed to improving user experience and usability across key modules like student records, schedules, and admin dashboards.',
   },
 
    {
     date: '2021',
     type: 'Collaborative Freelancing',
-    title: 'Lazy Developer PH.',
-    description: 'Collaborated with a team called Lazy Devs, focused on creating and building small-scale web projects tailored for real-world use. Handled both development and deployment, contributing to building and selling functional apps and tools for clients and online users.',
+    title: 'Lazy Developers',
+    description: 'Collaborated with a team called Lazy devs, focused on creating and building small-scale web projects tailored for real-world use. Handled both development and deployment, contributing to building and selling functional apps and tools for clients and online users.',
   },
 ];
 

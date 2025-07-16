@@ -59,6 +59,7 @@ export default function ExperienceTimeline() {
                                     {item.date} {item.type}
                                 </Typography>
                                 <Card
+                                    className="card-section"
                                     sx={{
                                         backgroundColor: '#111',
                                         color: '#fff',

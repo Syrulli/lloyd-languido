@@ -1,7 +1,6 @@
-// import React from "react";
 import { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "../app/components/navbar";
+import HeaderClientWrapper from "../app/components/HeaderClientWrapper";
 import Footer from '../app/components/footer';
 import "./globals.css";
 
@@ -25,9 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />  
+        <HeaderClientWrapper />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

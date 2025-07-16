@@ -54,5 +54,4 @@ const CertificateCard = ({ item }) => {
     </Box>
   );
 };
-
 export default CertificateCard;

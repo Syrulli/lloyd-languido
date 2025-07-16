@@ -44,13 +44,10 @@ export default function ProjectSection() {
                         size="small"
                         variant="contained"
                         sx={{
-                            backgroundColor: '#305256',
+                            backgroundColor: '#c5661e',
                             color: 'white',
                             textTransform: 'capitalize',
                             fontSize: '0.75rem',
-                            '&:hover': {
-                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                            },
                         }}
                     >
                         <GitHubIcon sx={{ fontSize: 'inherit', mr: 0.5, mb: 0.3 }} />

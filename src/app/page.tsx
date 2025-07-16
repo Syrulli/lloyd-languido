@@ -8,9 +8,12 @@ import AboutMeTerminalCard from './components/box/AboutMeCard';
 import AOSInitializer from './components/aos/AOSInitializer';
 import HomeSection from './components/stack/HomeStack';
 import ProjectsSection from './components/stack/ProjectSection';
+import LoadingScreen from './components/box/LoadingScreen';
+
 export default function Home() {
   return (
     <>
+      <LoadingScreen />
       <AOSInitializer />
       <HomeSection />
       <SectionStack>
