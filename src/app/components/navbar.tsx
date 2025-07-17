@@ -27,7 +27,7 @@ const Nav = () => {
       <Button
         variant="text"
         onClick={toggleDrawer(true)}
-        sx={{ color: "white", display: { xs: "flex", sm: "none" }, }}
+        sx={{ color: "var(--text-color)", display: { xs: "flex", sm: "none" }, }}
       >
         <MenuIcon />
       </Button>
@@ -36,17 +36,20 @@ const Nav = () => {
         onClose={toggleDrawer(false)}
         anchor="right"
         sx={{
-          display: {  sm: "none" },
+          display: { sm: "none" },
           "& .MuiDrawer-paper": {
             height: "100%",
-            width: "80%",
-            backgroundColor: "var(--background-body)",
-            color: "white",
+            width: "100%",
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(10px)',
+            boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+            color: "var(--text-color)",
           },
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "flex-end", p: 2 }}>
-          <Button onClick={toggleDrawer(false)} sx={{ color: "white" }}>
+          <Button onClick={toggleDrawer(false)} sx={{ color: "var(--text-color)" }}>
             <CloseIcon />
           </Button>
         </Box>
@@ -78,7 +81,7 @@ const NavList = ({ onItemClick, ...props }: { onItemClick?: () => void } & Stack
           <Typography
             onClick={onItemClick}
             sx={{
-              color: { xs: "primary", sm: "white" },
+              color: { xs: "primary", sm: "var(--text-color)" },
               textDecoration: "none",
               cursor: "pointer",
             }}

@@ -78,6 +78,19 @@ export default function HomeSection() {
                 </Stack>
             </Box>
 
+            {/* <Box
+                sx={{
+                    width: { xs: '100%', md: '50%' },
+                    height: '100%',
+                    backgroundImage: 'url(/img-1.png)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    position: 'relative',
+                }}
+            >
+            </Box> */}
+            
             <Box
                 sx={{
                     position: 'relative',
