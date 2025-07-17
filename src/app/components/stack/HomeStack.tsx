@@ -1,14 +1,15 @@
 import { Box, Stack, Typography, Button } from '@mui/material';
 import { LocationIcon, DownloadIcon, EmailIcon } from '../icons/IconPack';
+import Image from 'next/image';
 export default function HomeSection() {
     return (
         <Stack
             direction={{ xs: 'column-reverse', md: 'row' }}
             sx={{
-                mb: { xs: 5, lg: 3, xl: 6,},
+                mb: { xs: 5, lg: 3, xl: 6, },
                 mt: { xs: 0, lg: 8 },
                 position: 'relative',
-                height: { xs: '750px', md: '80vh', xl:'70vh' },
+                height: { xs: '750px', md: '80vh', xl: '70vh' },
             }}
         >
             <Box
@@ -31,7 +32,7 @@ export default function HomeSection() {
                 }}
             >
                 <Typography variant="h5" fontWeight="bold">Lloyd Sydlik Nim</Typography>
-                <Typography variant="body1"sx={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
+                <Typography variant="body1" sx={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
                     <LocationIcon sx={{ fontSize: 'inherit', mr: 0.5 }} />
                     Taguig, Philippines
                 </Typography>
@@ -79,27 +80,18 @@ export default function HomeSection() {
 
             <Box
                 sx={{
+                    position: 'relative',
                     width: { xs: '100%', md: '50%' },
                     height: '100%',
-                    backgroundImage: 'url(/img-1.png)',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    position: 'relative',
                 }}
             >
-                {/* <Box
-                    sx={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        background: `linear-gradient(to right, #000000 0%, rgba(17, 29, 29, 0) 5%)`,
-                        zIndex: 1,
-                        pointerEvents: 'none',
-                    }}
-                /> */}
+                <Image
+                    src="/img-1.png"
+                    alt="Background"
+                    fill
+                    priority
+                    style={{ objectFit: 'cover', objectPosition: 'center', zIndex: -1 }}
+                />
                 <Box
                     sx={{
                         position: 'absolute',

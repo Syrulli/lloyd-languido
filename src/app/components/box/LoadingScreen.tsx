@@ -4,20 +4,22 @@ import { Box, Fade } from '@mui/material';
 import Image from 'next/image';
 
 export default function LoadingWrapper({ children }: { children: React.ReactNode }) {
+  const [hasMounted, setHasMounted] = useState(false);
   const [showLoading, setShowLoading] = useState(true);
-  const [fadeOut, setFadeOut] = useState(false); 
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    setHasMounted(true);
+
     const lastLoaded = sessionStorage.getItem('homeLastLoaded');
     const now = Date.now();
 
     if (!lastLoaded || now - Number(lastLoaded) > 60_000) {
-      const delay = 2000; 
-      const fadeDuration = 500; 
+      const delay = 2000;
+      const fadeDuration = 500;
 
       const timer = setTimeout(() => {
-        setFadeOut(true); 
-
+        setFadeOut(true);
         setTimeout(() => {
           setShowLoading(false);
           sessionStorage.setItem('homeLastLoaded', String(now));
@@ -29,6 +31,9 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
       setShowLoading(false);
     }
   }, []);
+
+  // 🚫 Avoid hydration mismatch by not rendering anything until mounted
+  if (!hasMounted) return null;
 
   return (
     <>
