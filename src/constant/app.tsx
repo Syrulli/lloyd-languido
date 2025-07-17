@@ -27,23 +27,27 @@ export const recommendationsGroups = [
 export const techStack = [
 "JavaScript",
 "React",
+"Vite",
 "Next.js",
 "TypeScript",
 "Node.js",
 "jQuery",
 "AJAX",
-"Teachable Machine",
 "Tensorflow.js",
+"Teachable Machine",
+"C++",
 "PHP",
 "Laravel",
 "WAMP",
 "MySQL",
 "Tailwind",
 "Boostrap",
+"Material UI",
 "HTML5",
 "CSS3",
+"Vercel",
+"Netlify",
 "Figma",
-"C++",
 "GitHub",
 "Git"
 ];
@@ -203,5 +207,18 @@ export const projects = [
     techStack: ['C++', 'Basics'],
     downloadBtn: '/certification/CPA - Programming Essentials in C++.pdf'
   },
+   {
+    title: 'CPA - Programming Essentials in C++',
+    image: '/certification/img-3.png',
+    techStack: ['C++', 'Basics'],
+    downloadBtn: '/certification/CPA - Programming Essentials in C++.pdf'
+  },
+   {
+    title: 'CPA - Programming Essentials in C++',
+    image: '/certification/img-3.png',
+    techStack: ['C++', 'Basics'],
+    downloadBtn: '/certification/CPA - Programming Essentials in C++.pdf'
+  },
+  
 ];
 

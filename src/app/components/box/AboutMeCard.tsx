@@ -5,11 +5,11 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 
 const AboutMeTerminalCard = () => {
     return (
-        <Box data-aos="fade-up" sx={{flexDirection: 'column', }}>
+        <Box data-aos="fade-up" sx={{ flexDirection: 'column', }}>
             <Card
                 sx={{
                     bgcolor: 'var(--section)',
-                    width: { md: 540, xl: 610 },
+                    width: { md: 550, xl: 600 },
                     borderRadius: 2,
                 }}
                 className="card-section"
@@ -27,17 +27,28 @@ const AboutMeTerminalCard = () => {
                         <TerminalIcon sx={{ fontSize: '1rem' }} /> Terminal
                     </Typography>
                 </Box>
-                <CardContent>
-                    <Typography gutterBottom variant="body1" sx={{ color: '#B876E7', fontSize: '0.8rem' }}>
-                        $ npx <span style={{ color: '#52A060' }}>create-next-app@latest about-me</span>
-                    </Typography>
-                    <Typography sx={{ textAlign: 'justify', fontSize: '0.8rem' }}>
-                        I&apos;m a passionate junior full-stack developer with a strong foundation in PHP, MySQL, and JavaScript. My expertise lies in crafting custom web solutions that are both functional and visually appealing. Currently pursuing a Bachelor of Science in Information Technology (BSIT) with a major in web development at AMA University, I`ve honed my skills in both front-end and back-end development.
-                        Throughout my journey, I`ve been actively exploring the intersection of web development and artificial intelligence. I`ve successfully implemented AI-powered features, such as a dental detection AI using Google`s Teachable Machine, showcasing my ability to leverage cutting-edge technologies.
-                        My leadership experience is present through the leadership of a backend development team during a university competition, Appcon 2023. Moreover, working as a front-end developer through freelancing activities at Manuel L. Quezon University has helped me specialize in the design areas of Bootstrap UI/UX while ensuring smooth user experiences on almost all devices.
-                        I can commit myself to producing quality work, meeting deadlines, and meeting ever-changing project requirements. My willingness to contribute my skills and knowledge towards innovative projects and talented teams is high.
-                    </Typography>
-                </CardContent>
+                <Box
+                    onCopy={(e) => e.preventDefault()}
+                    onPaste={(e) => e.preventDefault()}
+                    onContextMenu={(e) => e.preventDefault()}
+                    onTouchStart={(e) => e.preventDefault()}
+                    sx={{
+                        userSelect: 'none',
+                        WebkitUserSelect: 'none',
+                        MozUserSelect: 'none',
+                        msUserSelect: 'none',
+                    }}
+                >
+                    <CardContent>
+                        <Typography gutterBottom variant="body1" sx={{ color: '#B876E7', fontSize: '0.8rem' }}>
+                            $ npx <span style={{ color: '#52A060' }}>create-next-app@latest about-me</span>
+                        </Typography>
+                        <Typography sx={{ textAlign: 'justify', fontSize: '0.8rem' }}>
+                            I&apos;m a junior full-stack developer with a solid foundation in PHP, MySQL, and JavaScript, passionate about building custom web solutions that are both functional and visually engaging. I&apos;m currently pursuing a Bachelor of Science in Information Technology majoring in Web Development at AMA University, where I continue to sharpen my skills in both front-end and back-end development. My journey in tech has led me to explore the exciting intersection of web development and artificial intelligence. One of my standout projects is a dental condition detection AI powered by a Convolutional Neural Network (CNN), using Google&apos;s Teachable Machine a testament to my ability to implement emerging technologies into practical applications.
+                            I&apos;ve demonstrated leadership as the backend team lead during Appcon 2023, a university-wide development competition. Professionally, I work as a freelance developer, contributing to various projects and collaborating with a team of like-minded creatives under the name Lazy Developers. My experience as a developer through freelance work—particularly with Manuel L. Quezon University allowed me to specialize in responsive design and UI/UX development using Bootstrap, ensuring smooth, accessible, and visually cohesive experiences across all devices.
+                        </Typography>
+                    </CardContent>
+                </Box>
             </Card>
         </Box>
     );

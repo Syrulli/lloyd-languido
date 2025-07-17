@@ -9,7 +9,7 @@ const CertificateCard = ({ item }) => {
         <Card
           sx={{
             width: {lg: 450, xl: 700 },
-            height: {lg: 76, xl: 71 },
+            height: {lg: 67, xl: 65 },
             marginBottom: 1.5,
             cursor: 'pointer',
             textDecoration: 'none',

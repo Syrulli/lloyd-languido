@@ -15,7 +15,7 @@ const Footer = () => {
                 justifyContent="space-between"
                 alignItems="center"
                 spacing={1}
-                px={{ xs: 0, sm: 0, md: 16, xl: 40, }}
+                px={{ xs: 0, sm: 0, lg: 15, xl: 40, }}
                 textAlign={{ xs: 'center' }}
             >
                 <Stack sx={{ display: 'flex', alignItems: 'flex-start' }}>

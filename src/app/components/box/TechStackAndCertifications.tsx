@@ -38,7 +38,7 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          mt: { xs: 3, lg: 2, xl: 3 },
+          mt: { xs: 3, lg: 2, },
         }}
       >
         <TypographyHeader>

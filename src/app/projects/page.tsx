@@ -23,10 +23,10 @@ export default function Projects() {
     return (
         <>
             <AOSInitializer />
-            <Container sx={{ mt: { xs: 10, md: 12 }, px: { lg: 11 }, }}>
-                <Grid container spacing={2} justifyContent="center">
+            <Container sx={{ mt: { xs: 10, md: 12 },}}>
+                <Grid container spacing={2} justifyContent='center'>
                     {projects.map((proj, index) => (    
-                        <Grid {...({ item: true, xs: 12, sm: 6, md: 4 } as GridProps)} key={index}>
+                        <Grid {...({ item: true,} as GridProps)} key={index}>
                             <Card
                                 className='card-section'
                                 onClick={() => handleOpen(proj.image)}
