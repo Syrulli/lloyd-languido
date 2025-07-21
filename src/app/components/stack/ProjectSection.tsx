@@ -78,12 +78,12 @@ export default function ProjectSection() {
             <Box
                 sx={{
                     flex: 1,
-                    height: 450,
+                    height: 420,
                     marginRight: { xs: 0, lg: 10, },
                     position: 'relative',
                 }}
             >
-                <CardSwap cardDistance={60} verticalDistance={70} delay={5000}>
+                <CardSwap cardDistance={50} verticalDistance={65} delay={3000}>
                     <Card className="card-section" >
                         <Box
                             sx={{
