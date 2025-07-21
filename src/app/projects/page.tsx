@@ -1,120 +1,41 @@
-'use client';
-import Image from 'next/image';
+"use client";
 import { useState } from 'react';
-import { Box, Card, Modal, Container, Typography, Grid, GridProps } from '@mui/material';
-import TypographyHeader from '../components/typography/TypographyHeader';
-import { projects } from '@/constant/app';
-import AOSInitializer from '../components/aos/AOSInitializer';
+import { ProjectCard } from '../components/card/ProjectCard';
+import { mockProjects } from '@/constant/app';
+import ProjectModal from '../components/modal/ProjectModal'; 
+import type { Project } from '@/types/project';
 
-export default function Projects() {
-    const [open, setOpen] = useState(false);
-    const [modalImage, setModalImage] = useState<string | null>(null);
+export default function Project() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-    const handleOpen = (img: string) => {
-        setModalImage(img);
-        setOpen(true);
-    };
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+  };
 
-    const handleClose = () => {
-        setOpen(false);
-        setModalImage(null);
-    };
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
 
-    return (
-        <>
-            <AOSInitializer />
-            <Container sx={{ mt: { xs: 10, md: 12 },}}>
-                <Grid container spacing={2} justifyContent='center'>
-                    {projects.map((proj, index) => (    
-                        <Grid {...({ item: true,} as GridProps)} key={index}>
-                            <Card
-                                className='card-section'
-                                onClick={() => handleOpen(proj.image)}
-                                data-aos="fade-up"
-                                sx={{
-                                    width: '100%',
-                                    cursor: 'pointer',
-                                    overflow: 'hidden',
-                                    height: '100%',
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        width: '100%',
-                                        height: 180,
-                                        position: 'relative',
-                                        '& img': {
-                                            filter: 'grayscale(100%) brightness(0.4)',
-                                            transition: 'filter 0.3s ease',
-                                        },
-                                        '&:hover img': {
-                                            filter: 'none',
-                                        },
-                                    }}
-                                >
-                                    <Image
-                                        src={proj.image}
-                                        alt={`${proj.title} badge`}
-                                        fill
-                                        style={{ objectFit: 'cover' }}
-                                    />
-                                </Box>
+  return (
+    <>
+      <div className="container mx-auto px-5 py-20 lg:px-0 lg:py-25">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-min">
+          {mockProjects.map((project, index) => (
+            <div
+              key={index}
+              className={
+                index === 0 || index === 1 || index === 6 || index === 7
+                  ? 'col-span-2 row-span-2'
+                  : 'col-span-1'
+              }
+            >
+              <ProjectCard {...project} onClick={() => handleProjectClick(project)} />
+            </div>
+          ))}
+        </div>
+      </div>
 
-                                <Box sx={{ p: 2 }}>
-                                    <TypographyHeader>
-                                        {proj.title}
-                                    </TypographyHeader>
-                                    <Box className="flex flex-wrap gap-2 mt-2">
-                                        {proj.techStack?.map((tech: string, index: number) => (
-                                            <Box
-                                                key={index}
-                                                className="px-2 py-0.5 text-xs rounded-md bg-foreground/5 border border-foreground/10"
-                                            >
-                                                {tech}
-                                            </Box>
-                                        ))}
-                                    </Box>
-
-                                </Box>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Container>
-            <Modal open={open} onClose={handleClose}>
-                <Box
-                    className="card-section"
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: '100%',
-                        maxWidth: 600,
-                        maxHeight: 'vh',
-                        overflow: 'auto',
-                        outline: 'none',
-                    }}
-                >
-                    <Box
-                        sx={{
-                            width: '100%',
-                            height: 300,
-                            backgroundImage: `url(${modalImage})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                        }}
-                    />
-                    <Box sx={{ p: 2 }}>
-                        <Typography variant="h6" gutterBottom color="white">
-                            Certificate Details
-                        </Typography>
-                        <Typography variant="body2" sx={{ textAlign: 'justify', color: 'white' }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore enim saepe earum eaque illum tempora sunt, maxime modi iusto...
-                        </Typography>
-                    </Box>
-                </Box>
-            </Modal>
-        </>
-    );
+      <ProjectModal selectedProject={selectedProject} onClose={handleCloseModal} />
+    </>
+  );
 }

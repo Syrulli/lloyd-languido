@@ -1,68 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { Box, Button, Card, CardContent, Typography } from '@mui/material';
-import { RightArrowIcon, FacebookIcon, EmailIcon, CloseIcon } from '../icons/IconPack';
-
-const contactOptions = [
-  {
-    label: 'lloydlanguido@gmail.com',
-    href: 'mailto:lloydlanguido@gmail.com',
-    textStyle: 'lowercase',
-    fontSize: '0.7rem',
-    showIcon: true,
-    icon: <EmailIcon sx={{ fontSize: '1rem' }} />,
-    subText: 'Feel free to ask.',
-  },
-  {
-    label: 'Schedule a call.',
-    href: 'https://calendly.com/lloydlanguido/30min',
-    textStyle: 'none',
-    fontSize: '0.7rem',
-    showIcon: true,
-    icon: <RightArrowIcon sx={{ fontSize: '1rem' }} />,
-    subText: "Let's Talk",
-  },
-  {
-    label:
-      'Feel free to ask me anything about programming, web development, or my experiences in tech. Let me know how I can help.',
-    href: 'mailto:lloydlanguido@gmail.com',
-    textStyle: 'none',
-    fontSize: '0.7rem',
-    showIcon: false,
-    icon: false,
-    subText: 'Get in touch.',
-  },
-];
-
-const lazyOptions = [
-  {
-    label: 'harrri.lazydevs@gmail.com',
-    href: 'mailto:harrri.lazydevs@gmail.com',
-    textStyle: 'none',
-    fontSize: '0.7rem',
-    subText: 'Contact us.',
-    showIcon: true,
-    icon: <EmailIcon sx={{ fontSize: '1rem' }} />,
-  },
-  {
-    label: 'Lazy Developers',
-    href: 'https://www.facebook.com/profile.php?id=100069560336398',
-    textStyle: 'none',
-    fontSize: '0.7rem',
-    subText: 'Facebook',
-    showIcon: true,
-    icon: <FacebookIcon sx={{ fontSize: '1rem' }} />,
-  },
-  {
-    label: 'Lazy Developers, a small team focused on building and deploying small-scale web projects for real-world use, delivering functional apps and tools for clients and online users.',
-    href: '#',
-    textStyle: 'none',
-    fontSize: '0.7rem',
-    subText: "I'm a member of",
-    showIcon: false,
-    icon: false,
-  },
-];
+import { CloseIcon } from '../icons/IconPack';
+import {contactOptions, lazyOptions} from '@/constant/app';
 
 const ContactCard = () => {
   const [activeTab, setActiveTab] = useState<'contact' | 'lazy'>('contact');

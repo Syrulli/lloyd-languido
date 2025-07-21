@@ -11,28 +11,19 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
   useEffect(() => {
     setHasMounted(true);
 
-    const lastLoaded = sessionStorage.getItem('homeLastLoaded');
-    const now = Date.now();
+    const delay = 2000;
+    const fadeDuration = 500;
 
-    if (!lastLoaded || now - Number(lastLoaded) > 60_000) {
-      const delay = 2000;
-      const fadeDuration = 500;
+    const timer = setTimeout(() => {
+      setFadeOut(true);
+      setTimeout(() => {
+        setShowLoading(false);
+      }, fadeDuration);
+    }, delay);
 
-      const timer = setTimeout(() => {
-        setFadeOut(true);
-        setTimeout(() => {
-          setShowLoading(false);
-          sessionStorage.setItem('homeLastLoaded', String(now));
-        }, fadeDuration);
-      }, delay);
-
-      return () => clearTimeout(timer);
-    } else {
-      setShowLoading(false);
-    }
+    return () => clearTimeout(timer);
   }, []);
 
-  // 🚫 Avoid hydration mismatch by not rendering anything until mounted
   if (!hasMounted) return null;
 
   return (

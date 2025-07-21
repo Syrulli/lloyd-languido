@@ -79,6 +79,7 @@ export default function ProjectSection() {
                 sx={{
                     flex: 1,
                     height: 450,
+                    marginRight: { xs: 0, lg: 10, },
                     position: 'relative',
                 }}
             >

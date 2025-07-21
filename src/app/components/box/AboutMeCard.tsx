@@ -44,10 +44,11 @@ const AboutMeTerminalCard = () => {
                             $ npx <span style={{ color: '#52A060' }}>create-next-app@latest about-me</span>
                         </Typography>
                         <Typography sx={{ textAlign: 'justify', fontSize: '0.8rem' }}>
-                            I&apos;m a junior full-stack developer with a solid foundation in PHP, MySQL, and JavaScript, passionate about building custom web solutions that are both functional and visually engaging. I&apos;m currently pursuing a Bachelor of Science in Information Technology majoring in Web Development at AMA University, where I continue to sharpen my skills in both front-end and back-end development. My journey in tech has led me to explore the exciting intersection of web development and artificial intelligence. One of my standout projects is a dental condition detection AI powered by a Convolutional Neural Network (CNN), using Google&apos;s Teachable Machine a testament to my ability to implement emerging technologies into practical applications.
+                            I&apos;m a junior full-stack developer with a solid foundation in PHP, MySQL, and JavaScript, passionate about building custom web solutions that are both functional and visually engaging. I&apos;m currently pursuing a Bachelor of Science in Information Technology majoring in Web Development at AMA University, where I continue to sharpen my skills in both front-end and back-end development. My journey in tech has led me to explore the exciting intersection of web development and artificial intelligence. One of my standout projects is a dental condition detection AI powered by a Convolutional Neural Network (CNN), using Google&apos;s Teachable Machine a proof to my ability to implement emerging technologies into practical applications.
                             I&apos;ve demonstrated leadership as the backend team lead during Appcon 2023, a university-wide development competition. Professionally, I work as a freelance developer, contributing to various projects and collaborating with a team of like-minded creatives under the name Lazy Developers. My experience as a developer through freelance work—particularly with Manuel L. Quezon University allowed me to specialize in responsive design and UI/UX development using Bootstrap, ensuring smooth, accessible, and visually cohesive experiences across all devices.
                         </Typography>
                     </CardContent>
+                    
                 </Box>
             </Card>
         </Box>

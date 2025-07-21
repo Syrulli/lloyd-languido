@@ -15,8 +15,8 @@ type Props = {
 
 const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
   return (
-    <Box data-aos="fade-up">
-      <Box>
+    <Box data-aos="fade-up" >
+      <Box sx={{ mt: { xs: 3, md: 0, lg: 0, xl: 0,},}}>
         <TypographyHeader >
           <LayersIcon sx={{ fontSize: 'inherit' }} /> Tech Stack
         </TypographyHeader>
@@ -49,7 +49,7 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
           component="a"
           href="/certifications"
           sx={{
-            mr: {lg: 2, xl: 3 },
+            mr: { lg: 2, xl: 3 },
             textDecoration: 'none',
             color: 'inherit',
             fontSize: 10,
@@ -57,7 +57,7 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
             '&:hover': { backgroundColor: 'transparent' },
           }}
         >
-          View all <ArrowIcon sx={{ fontSize: 'inherit'}} />
+          View all <ArrowIcon sx={{ fontSize: 'inherit' }} />
         </Button>
       </Box>
       {items.map((item, index) => (
