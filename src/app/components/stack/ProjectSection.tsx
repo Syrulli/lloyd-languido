@@ -101,7 +101,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/img-1.png"
+                            src="/projects/img-6.png"
                             alt="Home image"
                             width={500}
                             height={450}
@@ -130,7 +130,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/img-2.png"
+                            src="/projects/img-8.png"
                             alt="Home image"
                             width={500}
                             height={450}
