@@ -272,7 +272,7 @@ export const mockProjects: Project[] = [
     id: 2,
     title: "RTU IPCRs",
     description: "The Individual Performance Commitment and Review (IPCR) System is a secure and dynamic platform designed to streamline performance evaluation processes within an organization. It automates the generation of IPCR records, sends real-time email notifications upon record updates, and provides live performance tracking for improved transparency. With dedicated access levels for HR personnel, Department Heads, Employees, and the Super Admin, the system ensures efficient management, accountability, and data integrity across all users.",
-    image: ["./projects/ipcr/img-1.png", "./projects/ipcr/img-2.png", "./projects/ipcr/img-3.png", "./projects/ipcr/img-4.png", "./projects/ipcr/img-5.png", "./projects/ipcr/img-7.png", "./projects/ipcr/img-6.png", "./projects/ipcr/img-8.png",],
+    image: ["./projects/IPCR/img-1.png", "./projects/IPCR/img-2.png", "./projects/IPCR/img-3.png", "./projects/IPCR/img-4.png", "./projects/IPCR/img-5.png", "./projects/IPCR/img-7.png", "./projects/IPCR/img-6.png", "./projects/IPCR/img-8.png",],
     features: [
       "PHPSpreadsheet for IPCR Record Handling: Enables efficient creation, formatting, and export of IPCR records in spreadsheet format. ",
       "Role-Based Access Control (RBAC): Separate dashboards and permissions for HR, Department Heads, Employees, and Super Admin to ensure secure and organized workflows.",
