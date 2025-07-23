@@ -6,8 +6,8 @@ import Image from 'next/image';
 export default function ProjectSection() {
     return (
         <Stack
-            direction={{ xs: 'column', md: 'row' }}
-            alignItems={{ xs: 'center', md: 'center' }}
+            direction={{ xs: 'column', sm: 'column', md: 'row' }}
+            alignItems={{ xs: 'center', sm: 'center', md: 'center' }}
             sx={{
                 maxWidth: { xs: '93%', lg: '1025px', xl: '1350px' },
                 height: { xs: '350px', lg: '450px', xl: '460px' },
@@ -24,11 +24,10 @@ export default function ProjectSection() {
                     flex: 1,
                     display: 'flex',
                     flexDirection: 'column',
-                    px: { xs: 2, sm: 4, lg: 5 },
-
+                    px: { xs: 2, sm: 0, lg: 5 },
                 }}
             >
-                <Box sx={{ mt: { xs: 5, }, marginRight: { xs: 9, }, }}>
+                <Box sx={{ mt: { xs: 5,}, marginRight: { xs: 9, sm: 27, md: 0, lg: 0, }, }}>
                     <Typography variant="h5" fontWeight="bold">
                         Recent Projects
                     </Typography>
@@ -79,7 +78,7 @@ export default function ProjectSection() {
                 sx={{
                     flex: 1,
                     height: 420,
-                    marginRight: { xs: 0, lg: 10, },
+                    marginRight: { xs: 0, sm: 0, lg: 10, },
                     position: 'relative',
                 }}
             >

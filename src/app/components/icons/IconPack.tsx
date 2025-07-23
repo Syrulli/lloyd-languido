@@ -16,7 +16,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import CloseIcon from '@mui/icons-material/Close';
-import TokenIcon from '@mui/icons-material/Token';
+import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
 export {
   LocationOnOutlined as LocationIcon,
   DownloadOutlined as DownloadIcon,
@@ -36,7 +36,7 @@ export {
   AccountTreeIcon as AccountTreeIcon,
   InsertDriveFileOutlinedIcon as InsertDriveFileIcon,
   CloseIcon as CloseIcon,
-  TokenIcon as TokenIcon
+  SettingsSuggestOutlinedIcon as SettingsSuggestOutlinedIcon
 };
 
 

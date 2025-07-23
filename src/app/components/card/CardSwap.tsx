@@ -70,7 +70,28 @@ const placeNow = (el: HTMLElement, slot: Slot, skew: number) =>
     transformOrigin: "center center",
     zIndex: slot.zIndex,
     force3D: true,
-  });
+});
+
+// const getXPercent = () => {
+//   if (window.matchMedia("(max-width: 480px)").matches) return -30;
+//   if (window.matchMedia("(min-width: 610px) and (max-width: 1024px)").matches) return -5;
+//   return -35; 
+// };
+
+// const placeNow = (el: HTMLElement, slot: Slot, skew: number) => {
+//   const xPercent = getXPercent();
+//   gsap.set(el, {
+//     x: slot.x,
+//     y: slot.y,
+//     z: slot.z,
+//     xPercent,
+//     yPercent: -65,
+//     skewY: skew,
+//     transformOrigin: "center center",
+//     zIndex: slot.zIndex,
+//     force3D: true,
+//   });
+// };
 
 const CardSwap: React.FC<CardSwapProps> = ({
   width = 500,
@@ -87,21 +108,21 @@ const CardSwap: React.FC<CardSwapProps> = ({
   const config =
     easing === "elastic"
       ? {
-          ease: "elastic.out(0.6,0.9)",
-          durDrop: 2,
-          durMove: 2,
-          durReturn: 2,
-          promoteOverlap: 0.9,
-          returnDelay: 0.05,
-        }
+        ease: "elastic.out(0.6,0.9)",
+        durDrop: 2,
+        durMove: 2,
+        durReturn: 2,
+        promoteOverlap: 0.9,
+        returnDelay: 0.05,
+      }
       : {
-          ease: "power1.inOut",
-          durDrop: 0.8,
-          durMove: 0.8,
-          durReturn: 0.8,
-          promoteOverlap: 0.45,
-          returnDelay: 0.2,
-        };
+        ease: "power1.inOut",
+        durDrop: 0.8,
+        durMove: 0.8,
+        durReturn: 0.8,
+        promoteOverlap: 0.45,
+        returnDelay: 0.2,
+      };
 
   const childArr = useMemo(
     () => Children.toArray(children) as ReactElement<CardProps>[],
@@ -219,14 +240,14 @@ const CardSwap: React.FC<CardSwapProps> = ({
   const rendered = childArr.map((child, i) =>
     isValidElement<CardProps>(child)
       ? cloneElement(child, {
-          key: i,
-          ref: refs[i],
-          style: { width, height, ...(child.props.style ?? {}) },
-          onClick: (e) => {
-            child.props.onClick?.(e as React.MouseEvent<HTMLDivElement>);
-            onCardClick?.(i);
-          },
-        } as CardProps & React.RefAttributes<HTMLDivElement>)
+        key: i,
+        ref: refs[i],
+        style: { width, height, ...(child.props.style ?? {}) },
+        onClick: (e) => {
+          child.props.onClick?.(e as React.MouseEvent<HTMLDivElement>);
+          onCardClick?.(i);
+        },
+      } as CardProps & React.RefAttributes<HTMLDivElement>)
       : child
   );
 

@@ -3,6 +3,8 @@ export interface Project {
   title: string;
   description: string;
   image: string | string[];
+      features: string[];
+
   techStack: string[];
   size: 'large' | 'medium' | 'small';
 }
@@ -22,6 +24,7 @@ export interface ProjectModalProps {
     title: string;
     description: string;
     image: string | string[]; 
+    features: string[];
     techStack: string[];
     size: 'large' | 'medium' | 'small';
   } | null;
