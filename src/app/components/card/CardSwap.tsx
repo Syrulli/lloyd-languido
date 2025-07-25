@@ -72,27 +72,6 @@ const placeNow = (el: HTMLElement, slot: Slot, skew: number) =>
     force3D: true,
 });
 
-// const getXPercent = () => {
-//   if (window.matchMedia("(max-width: 480px)").matches) return -30;
-//   if (window.matchMedia("(min-width: 610px) and (max-width: 1024px)").matches) return -5;
-//   return -35; 
-// };
-
-// const placeNow = (el: HTMLElement, slot: Slot, skew: number) => {
-//   const xPercent = getXPercent();
-//   gsap.set(el, {
-//     x: slot.x,
-//     y: slot.y,
-//     z: slot.z,
-//     xPercent,
-//     yPercent: -65,
-//     skewY: skew,
-//     transformOrigin: "center center",
-//     zIndex: slot.zIndex,
-//     force3D: true,
-//   });
-// };
-
 const CardSwap: React.FC<CardSwapProps> = ({
   width = 500,
   height = 300,

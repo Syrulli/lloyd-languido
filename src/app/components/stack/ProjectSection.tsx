@@ -27,7 +27,7 @@ export default function ProjectSection() {
                     px: { xs: 2, sm: 0, lg: 5 },
                 }}
             >
-                <Box sx={{ mt: { xs: 5,}, marginRight: { xs: 9, sm: 27, md: 0, lg: 0, }, }}>
+                <Box sx={{ mt: { xs: 5, }, marginRight: { xs: 9, sm: 27, md: 0, lg: 0, }, }}>
                     <Typography variant="h5" fontWeight="bold">
                         Recent Projects
                     </Typography>
@@ -100,7 +100,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/img-6.png"
+                            src="/projects/Kohi/img-1.png"
                             alt="Home image"
                             width={500}
                             height={450}
@@ -115,7 +115,7 @@ export default function ProjectSection() {
                     <Card className="card-section" >
                         <Box
                             sx={{
-                                px: 2,
+                                px: 3,
                                 py: 1,
                                 display: 'flex',
                                 gap: 1,
@@ -129,7 +129,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/img-8.png"
+                            src="/projects/QCA/img-1.png"
                             alt="Home image"
                             width={500}
                             height={450}
@@ -144,11 +144,10 @@ export default function ProjectSection() {
                     <Card className="card-section" >
                         <Box
                             sx={{
-                                px: 2,
+                                px: 3,
                                 py: 1,
                                 display: 'flex',
                                 gap: 1,
-
                             }}
                         >
                             {['#ff5f56', '#ffbd2e', '#27c93f'].map((color, index) => (
@@ -159,7 +158,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/img-3.png"
+                            src="/projects/Rtu/img-1.png"
                             alt="Home image"
                             width={500}
                             height={450}
