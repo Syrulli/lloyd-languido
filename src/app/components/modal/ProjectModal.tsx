@@ -40,9 +40,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
             boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
           },
         }}
-       
+
       >
         <DialogContent className="card-section hide-scrollbar">
+          <TypographyHeader>{title}</TypographyHeader>
           <div className="w-full">
             <Swiper
               navigation
@@ -52,7 +53,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
             >
               {images.map((imgSrc, index) => (
                 <SwiperSlide key={index}>
-                  <TypographyHeader>{title}</TypographyHeader>
+
                   <img
                     src={imgSrc}
                     alt={`${title} screenshot ${index + 1}`}
