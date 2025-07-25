@@ -261,8 +261,12 @@ export const mockProjects: Project[] = [
     features: [
       "AI-Powered Dental Appointments: An all-in-one system for booking appointments and detecting dental issues a CNN-based image analysis trained with Teachable Machine.",
       "AI Dental Recommendations: Trained via Teachable Machine, the AI model detects dental conditions from images and automatically provides suitable service recommendations along with a suggested appointment date and time.",
+      "CNN-Based Severity Classification: Beyond detecting whether a dental condition exists, the CNN model classifies the severity level (e.g., mild, moderate, severe) of decay, staining, or malocclusion—supporting more tailored treatment planning.",
+      "Dynamic Time Slot Optimization: The system automatically adjusts available time slots based on dentist workload, real-time cancellations, and AI-predicted appointment durations depending on the complexity of detected conditions.",
+      "Confidence-Based Classification Thresholding: To minimize false positives, the system classifies a condition only if the prediction confidence exceeds a set threshold (e.g., 85%). If confidence is low, the system may flag the case as “Uncertain” and prompt for a professional review.",
       "Dental Charting & Treatment Planning: Dentis can create and manage digital dental charts, document conditions, and plan treatments for each patient.",
       "Expense Tracking (Chart.js): Visualizes dental service expenses over time using Chart.js for better financial monitoring and transparency.",
+      "Smart Notifications via SIM and Email: The system includes automated SMS (SIM-based) and email notifications. Patients receive real-time updates such as appointment confirmations, reminders, and rescheduling alerts—ensuring they are always informed and prepared. This feature reduces no-shows, improves clinic efficiency, and offers a more professional, reliable patient experience.",
     ],
 
     techStack: ["PHP", "Teachable Machine", "MySQL", "AJAX", "jQuery", "Bootstrap", "PHPMailer", "Chart.js", "Hostinger"],
@@ -306,16 +310,17 @@ export const mockProjects: Project[] = [
   {
     id: 4,
     title: "Beautyshine",
-    description: "lorem ipsum",
+    description: "Beautéshine cosmetics is a modern web-based application designed to bring you closer to your beauty goals with just a few clicks. Whether you're shopping for high-quality skincare, makeup essentials, or exclusive beauty bundles, BeautéShine offers a seamless, user-friendly experience tailored to your lifestyle. With integrated features like Stripe checkout, real-time product updates, and personalized recommendations, our platform makes beauty shopping smarter, faster, and more enjoyable. Discover, shop, and shine all in one place.",
     image: "./projects/img-2.png",
     features: [
-      "AI-based image diagnosis using CNN",
-      "Instant dental condition feedback",
-      "Patient appointment scheduling",
-      "Email notifications via PHPMailer",
-      "Secure database storage with MySQL"
+      "Seamless Stripe Integration: Users can securely purchase beauty products using Stripe, providing a fast and hassle-free checkout experience.",
+      "Wishlist and Favorites Feature: Shoppers can save their favorite products in a personal wishlist for future purchases or gift ideas.",
+      "Promotional Banners & Discount Codes: Highlight ongoing sales or limited-time offers with eye-catching banners and support for user-applied discount codes at checkout.",
+      "Loyalty Rewards Program: Registered customers earn points for every purchase, which can be redeemed for discounts or exclusive products",
+      "Blog or Beauty Tips Section: Features articles on skincare routines, makeup tutorials, product spotlights, and seasonal beauty trends to engage users.",
+      "Product Comparison Tool: Allows users to select multiple products and compare their ingredients, sizes, prices, and reviews side by side."
     ],
-    techStack: ["Next.js", "Node.js", "MongoDB", "MUI", "Vercel",],
+    techStack: ["Next.js", "Node.js", "MongoDB", "MUI", "Stripe", "Vercel",],
     size: "small"
   },
   {
@@ -351,31 +356,15 @@ export const mockProjects: Project[] = [
   {
     id: 7,
     title: "Kōhī",
-    description: "lorem ipsum",
-    image: ["./projects/Kohi/img-1.png"],
+    description: "Kōhī is a web-based coffee ordering system designed to streamline the customer experience and enhance the efficiency of café operations. Through a user-friendly interface, customers can conveniently browse the menu, customize their orders, and place them online. he system integrates real-time order management, secure checkout, and responsive design, making it accessible across devices. Kōhī aims to modernize traditional coffee shop services by embracing digital solutions that cater to today's fast-paced, tech-driven lifestyle.",
+    image: ["./projects/Kohi/img-1.png", "./projects/Kohi/img-2.png", "./projects/Kohi/img-3.png", "./projects/Kohi/img-4.png", "./projects/Kohi/img-5.png", "./projects/Kohi/img-6.png", "./projects/Kohi/img-7.png", "./projects/Kohi/img-8.png", "./projects/Kohi/img-9.png",],
     features: [
-      "AI-based image diagnosis using CNN",
-      "Instant dental condition feedback",
-      "Patient appointment scheduling",
-      "Email notifications via PHPMailer",
-      "Secure database storage with MySQL"
+      "Real-Time Order Status Tracker: Once an order is placed, users can track its progress in real-time (e.g., 'Under process', 'Ready for Pickup', 'Out for Delivery').",
+      "Dynamic Menu Management (Admin Panel): Admin can easily update menu items, prices, availability, and images through a secure backend—no coding required.",
+      "Order History: Admin can view a comprehensive history of all customer orders, including details such as order items, payment method (e.g., PayPal), status, timestamps, and customer information. ",
+      "Customer Feedback and Ratings: After every transaction, users can rate their drink and leave feedback, helping Kōhī improve product quality and service.",
     ],
     techStack: ["PHP", "MySQL", "AJAX", "jQuery", "Bootstrap", "PayPal SDK"],
-    size: "large"
-  },
-  {
-    id: 8,
-    title: "Ti-Tech",
-    description: "lorem ipsum",
-    image: "./projects/img-7.png",
-    features: [
-      "AI-based image diagnosis using CNN",
-      "Instant dental condition feedback",
-      "Patient appointment scheduling",
-      "Email notifications via PHPMailer",
-      "Secure database storage with MySQL"
-    ],
-    techStack: ["PHP", "MySQL", "AJAX", "jQuery", "Tailwind", "PayPal SDK"],
     size: "large"
   },
 ];
