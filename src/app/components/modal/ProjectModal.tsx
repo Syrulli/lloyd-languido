@@ -49,7 +49,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
               ))}
             </Swiper>
 
-            <div className="px-5 space-y-4">
+            <div className=" space-y-4">
               <Box onCopy={(e) => e.preventDefault()}
                 onPaste={(e) => e.preventDefault()}
                 onContextMenu={(e) => e.preventDefault()}
