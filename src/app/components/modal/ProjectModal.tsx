@@ -27,7 +27,21 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
         }
       `}</style>
 
-      <Dialog open={!!selectedProject} onClose={onClose} fullWidth maxWidth="md">
+      <Dialog
+        open={!!selectedProject}
+        onClose={onClose}
+        fullWidth
+        maxWidth="md"
+        BackdropProps={{
+          style: {
+            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(10px)',
+            boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+          },
+        }}
+       
+      >
         <DialogContent className="card-section hide-scrollbar">
           <div className="w-full">
             <Swiper
@@ -93,6 +107,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
           </div>
         </DialogContent>
       </Dialog>
+
     </>
   );
 };
