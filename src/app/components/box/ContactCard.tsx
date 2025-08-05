@@ -8,7 +8,7 @@ const ContactCard = () => {
   const [activeTab, setActiveTab] = useState<'contact' | 'lazy'>('contact');
 
   const tabs = [
-    { key: 'contact', label: 'LetConnect.tsx' },
+    { key: 'contact', label: 'LetsConnect.tsx' },
     { key: 'lazy', label: 'LazyDevelopers.tsx' },
   ];
 

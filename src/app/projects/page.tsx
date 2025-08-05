@@ -18,7 +18,7 @@ export default function Project() {
 
   return (
     <>
-      <div className="container mx-auto px-5 py-20 lg:px-0 lg:py-25">
+      <div className="container mx-auto px-5 py-20 lg:px-0 lg:py-25 xl:px-25">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-min">
           {mockProjects.map((project, index) => (
             <div

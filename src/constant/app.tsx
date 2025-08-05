@@ -8,8 +8,8 @@ export const pages = [
 ];
 
 export const items = [
-  { text: 'CPP - Advanced Programming in C++', paragraph: 'Cisco Networking Academy' },
-  { text: 'CPA - Programming Essentials in C++', paragraph: 'Cisco Networking Academy' },
+  { text: 'JSE2 - JavaScript', paragraph: 'Cisco & JS Institute' },
+  { text: 'JSE - JavaScript', paragraph: 'Cisco & OpenEDJ Institute' },
   { text: 'DevNet Associate', paragraph: 'Cisco Networking Academy' },
 ];
 
@@ -117,6 +117,14 @@ export const lazyOptions = [
 ];
 
 export const certificate = [
+
+  {
+    text: 'JSE2 - JavaScript Essentials 2 ',
+    paragraph: 'Cisco & JS Institutee',
+    badgeImage: '/certification/img-9.png',
+    badgeLink: 'https://www.credly.com/badges/75514c33-c55a-4ccf-a3b1-fb23d1f7ae08/public_url',
+    downloadBtn: '/certification/JavaScript_Essentials_2_certificate.pdf'
+  },
   {
     text: 'CPP - Advanced Programming in C++',
     paragraph: 'Cisco Networking Academy',

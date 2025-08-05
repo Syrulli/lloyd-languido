@@ -15,14 +15,14 @@ export const ProjectCard = ({
     const getSizeStyles = () => {
         switch (size) {
             case "large":
-                return { gridColumn: "span 2", gridRow: "span 2", height: { xs: 230, md: 260, lg: 280 } };
+                return { gridColumn: "span 2", gridRow: "span 2", height: { xs: 230, md: 260, lg: 280, xl: 350} };
             case "medium":
             case "small":
             default:
                 return {
                     gridColumn: "span 1",
                     gridRow: "span 1",
-                    height: { xs: 110, md: 140, lg: 140 },
+                    height: { xs: 110, md: 140, lg: 140, xl: 180 },
                 };
         }
     };

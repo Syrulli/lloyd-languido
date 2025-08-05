@@ -18,7 +18,7 @@ export default function ExperienceTimeline() {
                         pr: isMobile ? 2 : 5,
                         mt: 5,
                         mb: 5,
-                        maxWidth: '1200px',
+                        width: { xs: '100%', lg: '95%', xl: '100%' },
                         '&::before': {
                             content: '""',
                             position: 'absolute',
