@@ -214,10 +214,10 @@ export const certificate = [
 
 export const timelineData = [
   {
-    date: 'May 2025',
-    type: 'Collaborative Freelancing',
-    title: 'Delta Xi-Upsilon (DXU)',
-    description: 'Delta Xi-Upsilon (DXU) is a dynamic Sports Event Management and E-commerce platform built using Next.js framework. Designed to streamline club activities, event organization, and inter-club competitions, the system also integrates an efficient ordering system for merchandise and event-related products.',
+    date: 'Aug 2025',
+    type: 'Fulltime',
+    title: 'Fortune Pay Fintech',
+    description: 'Full Stack Developer with expertise in Node.js, OAuth, AWS, Flutter, and MongoDB. Experienced in managing multiple projects, developing secure and scalable web and mobile applications, and ensuring efficient API integration and testing using Swagger and Jest.',
   },
   {
     date: 'April 2025',
