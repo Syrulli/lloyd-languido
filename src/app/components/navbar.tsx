@@ -106,7 +106,7 @@ return (
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
     }}
   >
-    <Container maxWidth="xl" sx={{ px: { xs: 0, lg: 9, xl: 7 } }}>
+    <Container maxWidth="xl" sx={{ px: { xs: 0, lg: 10, xl: 7 } }}>
       <Toolbar>
         <Stack
           direction="row"

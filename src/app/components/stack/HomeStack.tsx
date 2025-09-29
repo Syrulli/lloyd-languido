@@ -22,7 +22,6 @@ export default function HomeSection() {
                     alignItems: { xs: 'flex-start', md: 'flex-start' },
                     textAlign: 'left',
 
-                    // Overlay mobile
                     position: { xs: 'absolute', md: 'relative' },
                     width: { xs: '100%', md: 'auto' },
                     height: { xs: '100%', md: 'auto' },

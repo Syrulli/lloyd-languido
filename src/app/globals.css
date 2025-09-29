@@ -24,7 +24,8 @@ body {
 .card-section {
   color: var(--text-color) !important;
   background: var(--section) !important;
-  border: 1px solid #222 !important;
+  border: 1px solid #292828 !important;
+  border-radius: 2px;
 }
 
 .frame {

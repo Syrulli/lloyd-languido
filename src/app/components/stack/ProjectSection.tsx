@@ -14,7 +14,6 @@ export default function ProjectSection() {
                 mx: 'auto',
                 overflow: 'hidden',
                 mt: 2,
-                borderRadius: 2,
             }}
             className="card-section"
             data-aos="fade-up"

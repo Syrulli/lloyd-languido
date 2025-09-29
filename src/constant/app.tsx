@@ -8,9 +8,27 @@ export const pages = [
 ];
 
 export const items = [
-  { text: 'JSE2 - JavaScript', paragraph: 'Cisco & JS Institute' },
-  { text: 'JSE - JavaScript', paragraph: 'Cisco & OpenEDJ Institute' },
-  { text: 'DevNet Associate', paragraph: 'Cisco Networking Academy' },
+  {
+    text: 'JSE2 - JavaScript Essentials 2',
+    paragraph: 'Cisco & JS Institutee',
+    image: '/certification/img-9.png',
+    
+  },
+  {
+    text: 'JSE - JavaScript Essentials 1',
+    paragraph: 'Cisco & OpenEDJ Institute',
+    image: '/certification/img-1.png',
+  },
+  {
+    text: 'DevNet Associate',
+    paragraph: 'Cisco Networking Academy',
+    image: '/certification/img-2.png',
+  },
+  {
+    text: 'Introduction to Cybersecurity',
+    paragraph: 'Cisco Networking Academy',
+    image: '/certification/img-5.png',
+  },
 ];
 
 export const recommendationsGroups = [

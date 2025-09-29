@@ -18,8 +18,10 @@ export default function Home() {
         <TechStackAndCertifications techStack={techStack} items={items} />
         <AboutMeTerminalCard />
       </SectionStack>
-      <ProjectsSection />
-      <Recommendation recommendationsGroups={recommendationsGroups} />
+      <main className="bg-[#000000] [background-image:radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] [background-size:20px_20px] text-[#E9EAEC] py-10">
+        <ProjectsSection />
+        <Recommendation recommendationsGroups={recommendationsGroups} />
+      </main>
     </>
   );
 }
