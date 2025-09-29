@@ -12,7 +12,7 @@ export const items = [
     text: 'JSE2 - JavaScript Essentials 2',
     paragraph: 'Cisco & JS Institutee',
     image: '/certification/img-9.png',
-    
+
   },
   {
     text: 'JSE - JavaScript Essentials 1',
@@ -47,34 +47,80 @@ export const recommendationsGroups = [
 ];
 
 export const techStack = [
-  "JavaScript",
-  "React",
-  "Vite",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "Jest.js",
-  "Postman",
-  "Swagger",
-  "jQuery",
-  "AJAX",
-  "Tensorflow.js",
-  "Teachable Machine",
-  "PHP",
-  "Laravel",
-  "WAMP",
-  "MySQL",
-  "MongoDB",
-  "Tailwind",
-  "Boostrap",
-  "Material UI",
-  "HTML5",
-  "CSS3",
-  "Vercel",
-  "Netlify",
-  "Figma",
-  "GitHub",
-  "Git"
+  {
+    category: "Frontend",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vite",
+      "jQuery",
+      "AJAX",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Tailwind",
+      "Shadcn",
+      "Bootstrap",
+      "Material UI",
+    ],
+  },
+  {
+    category: "Backend",
+    items: [
+      "Node.js",
+      "Express.js",
+      "PHP",
+      "Laravel",
+      "WAMP",
+      "MERN",
+      "RESTful",
+      "OAuth",
+      "JWT",
+      "MySQL",
+      "MongoDB",
+      "SQLite",
+    ],
+  },
+  {
+    category: "Machine Learning / AI",
+    items: [
+      "Tensorflow.js",
+      "Teachable Machine",
+      "Open AI",
+    ],
+  },
+  {
+    category: "Testing & API",
+    items: [
+      "Jest.js",
+      "Postman",
+      "Swagger",
+    ],
+  },
+  {
+    category: "DevOps & Cloud",
+    items: [
+      "Vercel",
+      "Netlify",
+      "Hostinger",
+      "GitHub",
+      "Gitlab",
+      "GitLab CI",
+      "Git",
+    ],
+  },
+  {
+    category: "Security & Identity",
+    items: [
+      "AWS IAM",
+      "Okta",
+      "Auth0",
+      "Cognito",
+      "Keycloak",
+    ],
+  },
 ];
 
 export const contactOptions = [
