@@ -46,7 +46,7 @@ export const recommendationsGroups = [
   ],
 
   [
-    { image: '/testimonial/img-7.png', name: 'Steven John Alcera', position: 'Senior QA Tester at Fortune Pay Fintech', text: '“Lloyd is a dedicated developer who consistently delivers quality work on time. He shows great attention to detail and always ensures her code is clean and efficient. His works well with the team and contributes valuable ideas to improve projects.”' },
+    { image: '/testimonial/img-7.png', name: 'Steven John Alcera', position: 'Senior QA Tester at Fortune Pay Fintech', text: '“Lloyd is a dedicated developer who consistently delivers quality work on time. He shows great attention to detail and always ensures his code is clean and efficient. His works well with the team and contributes valuable ideas to improve projects.”' },
     { image: '/testimonial/img-8.png', name: 'Glen Raven Dayawon', position: 'Backend Developer at Fortune Pay Fintech', text: '“Lloyd is a skilled and reliable full stack developer. He writes clean, efficient code, communicates well with teammates, and consistently delivers quality work on both frontend and backend tasks. His problem-solving skills and proactive approach make him a valuable asset to any project.”' },
   ],
 ];
