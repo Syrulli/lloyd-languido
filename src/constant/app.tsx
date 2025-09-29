@@ -38,11 +38,16 @@ export const recommendationsGroups = [
   ],
   [
     { image: '/testimonial/img-3.png', name: 'Myro Mera', position: 'Junior Programmer at TemaroTech', text: '“Lloyd is not only a brilliant programmer but also a dependable teammate. In every competition, he brings sharp logic, calm focus, and a positive attitude that lifts the whole team. Working with him has been both inspiring and fun.”' },
-    { image: '/testimonial/img-4.png', name: 'King Dranreb Languido', position: 'Lead Full Stack Engineer at Collabera Digital.', text: '“Lloyd has been an invaluable asset on multiple successful projects. He brings strong technical skills, a proactive approach to problem-solving, and a dedication that drives results. I highly recommend his work and know he will excel in any future role.”' },
+    { image: '/testimonial/img-4.png', name: 'King Dranreb Languido', position: 'Technical Project Manager at Collabera Digital.', text: '“Lloyd has been an invaluable asset on multiple successful projects. He brings strong technical skills, a proactive approach to problem-solving, and a dedication that drives results. I highly recommend his work and know he will excel in any future role.”' },
   ],
   [
-    { image: '/testimonial/img-5.png', name: 'Ella Mariz Punzalan ', position: 'Library Technician at AMA University', text: '“Although I have limited knowledge in IT, having Lloyd as my intern has significantly eased my clerical tasks. Whenever I need assistance, he is always there to help me. Moreover, I am grateful for his friendship, especially since I am new to AMA University. Thank you for your moral support, and congratulations on your well-deserved graduation!”' },
+    { image: '/testimonial/img-5.png', name: 'Ella Mariz Punzalan', position: 'Library Technician at AMA University', text: '“Although I have limited knowledge in IT, having Lloyd as my intern has significantly eased my clerical tasks. Whenever I need assistance, he is always there to help me. Moreover, I am grateful for his friendship, especially since I am new to AMA University. Thank you for your moral support, and congratulations on your well-deserved graduation!”' },
     { image: '/testimonial/img-6.png', name: 'Andrew Robin', position: 'Computer Programmer at LGU SJDM Bulacan', text: '“Lloyd is an excellent junior developer combines strong foundational skills with a growth mindset, quickly adapting to new technologies, writing clean and efficient code, and actively contributing to team success through collaboration and continuous learning.”' },
+  ],
+
+  [
+    { image: '/testimonial/img-7.png', name: 'Steven John Alcera', position: 'Senior QA Tester at Fortune Pay Fintech', text: '“Lloyd is a dedicated developer who consistently delivers quality work on time. He shows great attention to detail and always ensures her code is clean and efficient. His works well with the team and contributes valuable ideas to improve projects.”' },
+    { image: '/testimonial/img-8.png', name: 'Glen Raven Dayawon', position: 'Backend Developer at Fortune Pay Fintech', text: '“Lloyd is a skilled and reliable full stack developer. He writes clean, efficient code, communicates well with teammates, and consistently delivers quality work on both frontend and backend tasks. His problem-solving skills and proactive approach make him a valuable asset to any project.”' },
   ],
 ];
 
