@@ -8,7 +8,7 @@ export interface Project {
   techStack: string[];
   size: 'large' | 'medium' | 'small';
 }
-
+// test
 export interface ProjectCardProps {
   title: string;
   image: string | string[]; 
