@@ -15,6 +15,11 @@ export const items = [
 
   },
   {
+    text: 'Anti-Money Laundering and Counter-Terrorism Financing',
+    paragraph: 'AMLC – AML/CTF',
+    image: '/certification/img-10.png',
+  },
+  {
     text: 'JSE - JavaScript Essentials 1',
     paragraph: 'Cisco & OpenEDJ Institute',
     image: '/certification/img-1.png',
@@ -190,7 +195,6 @@ export const lazyOptions = [
 ];
 
 export const certificate = [
-
   {
     text: 'JSE2 - JavaScript Essentials 2 ',
     paragraph: 'Cisco & JS Institutee',
@@ -275,7 +279,13 @@ export const certificate = [
     badgeLink: 'https://www.credly.com/badges/c57eacd4-fcd9-444c-a608-3963290fbdd8/public_url',
     downloadBtn: '/certification/Cybersecurity Essentials.pdf'
   },
-
+  {
+    text: 'Anti-Money Laundering and Counter-Terrorism Financing',
+    paragraph: 'AMLC – AML/CTF',
+    badgeImage: '/certification/img-10.png',
+    badgeLink: '',
+    downloadBtn: '/certification/AML-CTF.pdf'
+  },
   {
     text: 'AMA University - Internship',
     paragraph: 'AMA University',
@@ -338,7 +348,7 @@ export const mockProjects: Project[] = [
     id: 1,
     title: "Dental Appointment Scheduling System",
     description: "This web application streamlines dental appointment scheduling while integrating an AI-powered diagnostic feature. Using a Convolutional Neural Network (CNN) trained via Teachable Machine, the AI detects teeth images to detect common conditions such as decay, gingivitis, and malocclusion. Patients receive instant image-based dental insights, recommended actions, and service suggestions—enhancing both accessibility and early detection in oral healthcare.",
-    image: ['./projects/Dental/img-1.png', './projects/Dental/img-2.png', './projects/Dental/img-3.png', './projects/Dental/img-4.png', './projects/Dental/img-5.png', './projects/Dental/img-6.png', './projects/Dental/img-7.png'],
+    image: ['./projects/Dental/img-1.webp', './projects/Dental/img-2.webp', './projects/Dental/img-3.webp', './projects/Dental/img-4.webp', './projects/Dental/img-5.webp', './projects/Dental/img-6.webp', './projects/Dental/img-7.webp'],
     features: [
       "AI-Powered Dental Appointments: An all-in-one system for booking appointments and detecting dental issues a CNN-based image analysis trained with Teachable Machine.",
       "AI Dental Recommendations: Trained via Teachable Machine, the AI model detects dental conditions from images and automatically provides suitable service recommendations along with a suggested appointment date and time.",
@@ -357,7 +367,7 @@ export const mockProjects: Project[] = [
     id: 2,
     title: "RTU IPCRs",
     description: "The Individual Performance Commitment and Review (IPCR) System is a secure and dynamic platform designed to streamline performance evaluation processes within an organization. It automates the generation of IPCR records, sends real-time email notifications upon record updates, and provides live performance tracking for improved transparency. With dedicated access levels for HR personnel, Department Heads, Employees, and the Super Admin, the system ensures efficient management, accountability, and data integrity across all users.",
-    image: ["./projects/Rtu/img-1.png", "./projects/Rtu/img-2.png", "./projects/Rtu/img-3.png", "./projects/Rtu/img-4.png", "./projects/Rtu/img-5.png", "./projects/Rtu/img-7.png", "./projects/Rtu/img-6.png", "./projects/Rtu/img-8.png", "./projects/Rtu/img-9.png"],
+    image: ["./projects/Rtu/img-1.webp", "./projects/Rtu/img-2.webp", "./projects/Rtu/img-3.webp", "./projects/Rtu/img-4.webp", "./projects/Rtu/img-5.webp", "./projects/Rtu/img-7.webp", "./projects/Rtu/img-6.webp", "./projects/Rtu/img-8.webp", "./projects/Rtu/img-9.webp"],
     features: [
       "PHPSpreadsheet for IPCR Record Handling: Enables efficient creation, formatting, and export of IPCR records in spreadsheet format. ",
       "Role-Based Access Control (RBAC): Separate dashboards and permissions for HR, Department Heads, Employees, and Super Admin to ensure secure and organized workflows.",
@@ -377,7 +387,7 @@ export const mockProjects: Project[] = [
     id: 3,
     title: "Subnet IPv4 Calculator",
     description: "Subnet IPv4 Calculator: Enter an IP address, desired hosts or subnets, and get detailed results including octets, binary format, network class, subnet mask, CIDR, borrowed bits, subnet increment, network ID, usable host range, broadcast address, and more — everything you need for accurate subnetting",
-    image: "./projects/img-5.png",
+    image: "./projects/img-5.webp",
     features: [
       "Accepts IPv4 input, required number of hosts and required number of subnets",
       "Calculates and displays the correct octets and shows binaryrepresentation of the IP address",
@@ -392,7 +402,7 @@ export const mockProjects: Project[] = [
     id: 4,
     title: "Beautyshine",
     description: "Beautéshine cosmetics is a modern web-based application designed to bring you closer to your beauty goals with just a few clicks. Whether you're shopping for high-quality skincare, makeup essentials, or exclusive beauty bundles, BeautéShine offers a seamless, user-friendly experience tailored to your lifestyle. With integrated features like Stripe checkout, real-time product updates, and personalized recommendations, our platform makes beauty shopping smarter, faster, and more enjoyable. Discover, shop, and shine all in one place.",
-    image: "./projects/img-2.png",
+    image: "./projects/img-2.webp",
     features: [
       "Seamless Stripe Integration: Users can securely purchase beauty products using Stripe, providing a fast and hassle-free checkout experience.",
       "Wishlist and Favorites Feature: Shoppers can save their favorite products in a personal wishlist for future purchases or gift ideas.",
@@ -408,7 +418,7 @@ export const mockProjects: Project[] = [
     id: 5,
     title: "Gusstenberg",
     description: "The Gusstenberg system is a desktop-based application developed using Java, designed to streamline and automate payroll operations within an organization. It ensures accurate salary computation by integrating employee records, attendance data, tax rules, and government contributions. With built-in PDF payslip generation, the system simplifies payroll documentation and distribution.",
-    image: ["./projects/Gusstenberg/img-1.png", "./projects/Gusstenberg/img-2.png", "./projects/Gusstenberg/img-3.png", "./projects/Gusstenberg/img-4.png", "./projects/Gusstenberg/img-5.png", "./projects/Gusstenberg/img-6.png", "./projects/Gusstenberg/img-7.png",],
+    image: ["./projects/Gusstenberg/img-1.webp", "./projects/Gusstenberg/img-2.webp", "./projects/Gusstenberg/img-3.webp", "./projects/Gusstenberg/img-4.webp", "./projects/Gusstenberg/img-5.webp", "./projects/Gusstenberg/img-6.webp", "./projects/Gusstenberg/img-7.webp",],
     features: [
       "Role-Based Access Control: Admins, HR personnel, and managers have designated access levels to view or modify payroll data securely.",
       "Payroll Computation: Accurately calculates gross pay, deductions, benefits, taxes, and net pay based on employee data and attendance.",
@@ -423,7 +433,7 @@ export const mockProjects: Project[] = [
     id: 6,
     title: "QCA Foundation",
     description: "This web application, developed for the QCA Foundation, is designed to streamline the borrowing of school tools and equipment, while also offering a class scheduling feature for efficient resource and time management. The system aims to improve the overall organization and accessibility of academic materials, allowing students and teachers to borrow tools seamlessly through a digital platform. By integrating a user-friendly interface and real-time scheduling, the application ensures that tools are available when needed and that class schedules are well-organized and conflict-free. Whether it's reserving lab equipment or managing classroom use, this system supports the foundation's mission to enhance educational experiences through effective digital solutions.",
-    image: ["./projects/QCA/img-1.png", "./projects/QCA/img-2.png", "./projects/QCA/img-3.png", "./projects/QCA/img-4.png", "./projects/QCA/img-5.png", "./projects/QCA/img-6.png", "./projects/QCA/img-7.png", "./projects/QCA/img-8.png",],
+    image: ["./projects/QCA/img-1.webp", "./projects/QCA/img-2.webp", "./projects/QCA/img-3.webp", "./projects/QCA/img-4.webp", "./projects/QCA/img-5.webp", "./projects/QCA/img-6.webp", "./projects/QCA/img-7.webp", "./projects/QCA/img-8.webp",],
     features: [
       "Smart Borrowing System with Real-Time Availability: Students and teachers can view tool availability in real-time and request to borrow items. The system prevents double bookings by updating inventory instantly.",
       "Automated Class Scheduler with Conflict Detection: Faculty can create and manage class schedules, the system automatically detects scheduling conflicts for classrooms, tools, or instructors and suggests alternatives.",
@@ -438,7 +448,7 @@ export const mockProjects: Project[] = [
     id: 7,
     title: "Kōhī",
     description: "Kōhī is a web-based coffee ordering system designed to streamline the customer experience and enhance the efficiency of café operations. Through a user-friendly interface, customers can conveniently browse the menu, customize their orders, and place them online. he system integrates real-time order management, secure checkout, and responsive design, making it accessible across devices. Kōhī aims to modernize traditional coffee shop services by embracing digital solutions that cater to today's fast-paced, tech-driven lifestyle.",
-    image: ["./projects/Kohi/img-1.png", "./projects/Kohi/img-2.png", "./projects/Kohi/img-3.png", "./projects/Kohi/img-4.png", "./projects/Kohi/img-5.png", "./projects/Kohi/img-6.png", "./projects/Kohi/img-7.png", "./projects/Kohi/img-8.png", "./projects/Kohi/img-9.png",],
+    image: ["./projects/Kohi/img-1.webp", "./projects/Kohi/img-2.webp", "./projects/Kohi/img-3.webp", "./projects/Kohi/img-4.webp", "./projects/Kohi/img-5.webp", "./projects/Kohi/img-6.webp", "./projects/Kohi/img-7.webp", "./projects/Kohi/img-8.webp", "./projects/Kohi/img-9.webp",],
     features: [
       "Real-Time Order Status Tracker: Once an order is placed, users can track its progress in real-time (e.g., 'Under process', 'Ready for Pickup', 'Out for Delivery').",
       "Dynamic Menu Management (Admin Panel): Admin can easily update menu items, prices, availability, and images through a secure backend—no coding required.",

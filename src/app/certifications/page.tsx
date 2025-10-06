@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Box, Stack, Typography, Card, Button } from '@mui/material';
 import { certificate } from '@/constant/app';
 import AOSInitializer from '../components/aos/AOSInitializer';
-const leftColumnCertificate = certificate.slice(0, 6);
+const leftColumnCertificate = certificate.slice(0, 7);
 const rightColumnCertificate = certificate.slice(6);
 
 export default function Certificate() {
