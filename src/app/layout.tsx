@@ -18,7 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Lloyd Nim | Full Stack Developer",
+  title: "Lloyd Languido | Full Stack Developer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

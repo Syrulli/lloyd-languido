@@ -20,7 +20,7 @@ const Footer = () => {
             >
                 <Stack sx={{ display: 'flex', alignItems: 'flex-start' }}>
                     <Typography variant="body2" gutterBottom sx={{ textAlign: 'left' }}>
-                        © 2025 Lloyd Sydlik Nim | All rights reserved.
+                        © 2025 Lloyd Languido | All rights reserved.
                     </Typography>
                     {/* <Typography variant="body1" sx={{ fontSize: '0.875rem', display: 'flex', alignItems: 'center' }}>
                         <AlternateEmailOutlinedIcon sx={{ fontSize: 'inherit', mr: 0.5 }} /> lloydlanguido@gmail.com

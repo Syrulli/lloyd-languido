@@ -30,7 +30,7 @@ export default function HomeSection() {
                     paddingTop: { xs: 60, lg: 0, xl: 0 },
                 }}
             >
-                <Typography variant="h5" fontWeight="bold">Lloyd Sydlik Nim</Typography>
+                <Typography variant="h5" fontWeight="bold">Lloyd Sydlik Languido</Typography>
                 <Typography variant="body1" sx={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
                     <LocationIcon sx={{ fontSize: 'inherit', mr: 0.5 }} />
                     Taguig, Philippines
