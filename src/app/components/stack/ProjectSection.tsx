@@ -99,7 +99,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/Kohi/img-1.png"
+                            src="/projects/Kohi/img-1.webp"
                             alt="Home image"
                             width={500}
                             height={450}
@@ -128,7 +128,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/QCA/img-1.png"
+                            src="/projects/QCA/img-1.webp"
                             alt="Home image"
                             width={500}
                             height={450}
@@ -157,7 +157,7 @@ export default function ProjectSection() {
                             ))}
                         </Box>
                         <Image
-                            src="/projects/Rtu/img-1.png"
+                            src="/projects/Rtu/img-1.webp"
                             alt="Home image"
                             width={500}
                             height={450}
