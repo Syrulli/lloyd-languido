@@ -59,7 +59,7 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
               padding: '2px 6px',
             }}
           >
-            {showAllTech ? 'Collapse' : 'View all'}{' '}
+            {showAllTech ? 'Show less' : 'View all'}{' '}
             <ArrowIcon sx={{ fontSize: 'inherit', ml: 0.5 }} />
           </Button>
         </Box>
