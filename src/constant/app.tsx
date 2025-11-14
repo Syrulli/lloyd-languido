@@ -14,11 +14,11 @@ export const items = [
     image: '/certification/img-9.png',
 
   },
-  {
-    text: 'Anti-Money Laundering and Counter-Terrorism Financing',
-    paragraph: 'AMLC – AML/CTF',
-    image: '/certification/img-10.png',
-  },
+  // {
+  //   text: 'Anti-Money Laundering and Counter-Terrorism Financing',
+  //   paragraph: 'AMLC – AML/CTF',
+  //   image: '/certification/img-10.png',
+  // },
   {
     text: 'JSE - JavaScript Essentials 1',
     paragraph: 'Cisco & OpenEDJ Institute',
