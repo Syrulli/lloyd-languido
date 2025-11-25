@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import localFont from "next/font/local";
 import HeaderClientWrapper from "../app/components/HeaderClientWrapper";
 import Footer from "../app/components/footer";
+import Chatbot from "../app/components/Chatbot";
 import LoadingWrapper from "../app/components/box/LoadingScreen";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LoadingWrapper>
           <HeaderClientWrapper />
           {children}
+          <Chatbot />
           <Footer />
         </LoadingWrapper>
       </body>

@@ -17,6 +17,7 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
+import ChatIcon from '@mui/icons-material/Chat';
 export {
   LocationOnOutlined as LocationIcon,
   DownloadOutlined as DownloadIcon,
@@ -36,7 +37,8 @@ export {
   AccountTreeIcon as AccountTreeIcon,
   InsertDriveFileOutlinedIcon as InsertDriveFileIcon,
   CloseIcon as CloseIcon,
-  SettingsSuggestOutlinedIcon as SettingsSuggestOutlinedIcon
+  SettingsSuggestOutlinedIcon as SettingsSuggestOutlinedIcon,
+  ChatIcon as ChatIcon
 };
 
 
