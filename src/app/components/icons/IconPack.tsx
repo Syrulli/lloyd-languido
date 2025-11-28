@@ -13,11 +13,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import CodeIcon from '@mui/icons-material/Code';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
 import ChatIcon from '@mui/icons-material/Chat';
+import ScienceIcon from '@mui/icons-material/Science';
 export {
   LocationOnOutlined as LocationIcon,
   DownloadOutlined as DownloadIcon,
@@ -34,11 +34,11 @@ export {
   JavascriptIcon as JavascriptIcon,
   CodeIcon as CodeIcon,
   ArrowForwardIosIcon,
-  AccountTreeIcon as AccountTreeIcon,
   InsertDriveFileOutlinedIcon as InsertDriveFileIcon,
   CloseIcon as CloseIcon,
   SettingsSuggestOutlinedIcon as SettingsSuggestOutlinedIcon,
-  ChatIcon as ChatIcon
+  ChatIcon as ChatIcon,
+  ScienceIcon as ScienceIcon,
 };
 
 

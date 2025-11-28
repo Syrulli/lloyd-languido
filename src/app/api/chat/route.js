@@ -41,7 +41,7 @@ User: ${message}
     console.error('Gemini Error:', error);
     if (error.message.includes('quota') || error.status === 429) {
       return NextResponse.json(
-        { reply: 'Hit free quota—try again later or upgrade for more!' },
+        { reply: 'Lloyd Languido is unavailable try again later.' },
         { status: 429 }
       );
     }

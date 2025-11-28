@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Button, } from '@mui/material';
-import { GitHubIcon, AccountTreeIcon } from '../icons/IconPack';
+import { GitHubIcon, ScienceIcon } from '../icons/IconPack';
 import CardSwap, { Card } from '../card/CardSwap';
 import Image from 'next/image';
 
@@ -7,13 +7,13 @@ export default function ProjectSection() {
     return (
         <Stack
             direction={{ xs: 'column', sm: 'column', md: 'row' }}
-            alignItems={{ xs: 'center', sm: 'center', md: 'center' }}
+            alignItems={{ xs: 'center', sm: 'center', xl: 'center' }}
             sx={{
-                maxWidth: { xs: '93%', lg: '1025px', xl: '1350px' },
+                width: { xs: '93%', lg: '1020px', xl: '1290px' },
                 height: { xs: '350px', lg: '450px', xl: '460px' },
                 mx: 'auto',
                 overflow: 'hidden',
-                mt: 2,
+                mt: 3,
             }}
             className="card-section"
             data-aos="fade-up"
@@ -67,7 +67,7 @@ export default function ProjectSection() {
                             },
                         }}
                     >
-                        <AccountTreeIcon sx={{ fontSize: 'inherit', mr: 0.5, }} />
+                        <ScienceIcon sx={{ fontSize: 'inherit', mr: 0.5, }} />
                         View projects
                     </Button>
                 </Stack>

@@ -6,8 +6,8 @@ export default function HomeSection() {
         <Stack
             direction={{ xs: 'column-reverse', md: 'row' }}
             sx={{
-                mb: { xs: 5, lg: 3, xl: 6, },
-                mt: { xs: 0, lg: 8 },
+                mb: { xs: 5, lg: 3, xl: 15, },
+                mt: { xs: 0, lg: 8, xl: 10},
                 position: 'relative',
                 height: { xs: '750px', md: '80vh', xl: '70vh' },
             }}
@@ -15,7 +15,7 @@ export default function HomeSection() {
             <Box
                 sx={{
                     flex: 1,
-                    px: { xs: 2, sm: 3, lg: 15, xl: 40 },
+                    px: { xs: 2, sm: 3, lg: 15, xl: 25,},
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -77,19 +77,6 @@ export default function HomeSection() {
                 </Stack>
             </Box>
 
-            {/* <Box
-                sx={{
-                    width: { xs: '100%', md: '50%' },
-                    height: '100%',
-                    backgroundImage: 'url(/img-1.png)',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    position: 'relative',
-                }}
-            >
-            </Box> */}
-            
             <Box
                 sx={{
                     position: 'relative',

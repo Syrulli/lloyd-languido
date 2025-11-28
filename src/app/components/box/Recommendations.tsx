@@ -23,7 +23,7 @@ const Recommendation: React.FC<RecommendationProps> = ({ recommendationsGroups }
       data-aos="fade-up"
       direction="column"
       spacing={4}
-      sx={{ px: { xs: 2, sm: 3, md: 15, xl: 40 }, pb: { xs: 2, sm: 3, md: 5 }, mt: { xs: 5, lg: 5, xl: 5,} }}
+      sx={{ px: { xs: 2, sm: 3, md: 15, xl: 20 }, pb: { xs: 2, sm: 3, md: 5 }, mt: { xs: 5, lg: 7, xl: 5,} }}
     >
       <Box sx={{ textAlign: 'justify' }}>
         <TypographyHeader data-aos="fade-up">

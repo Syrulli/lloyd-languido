@@ -320,7 +320,7 @@ export const timelineData = [
     date: '2023',
     type: 'Competition',
     title: 'APPCON 2023',
-    description: 'Led the backend development team in a competition project called Flood Monitor AI, a web application aimed at addressing flood-related challenges in the Philippines. Focused on building scalable backend infrastructure to support real-time data processing and community alerts, contributing to disaster preparedness and public safety.',
+    description: 'Led the backend development team in a competition project a Flood Monitor AI, a web application aimed at addressing flood-related challenges in the Philippines. Focused on building scalable backend infrastructure to support real-time data processing and community alerts, contributing to disaster preparedness and public safety.',
   },
 
   {

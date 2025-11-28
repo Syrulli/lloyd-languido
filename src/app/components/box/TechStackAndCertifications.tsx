@@ -23,10 +23,10 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
   const [showAllTech, setShowAllTech] = useState(false);
 
   return (
-    <Box data-aos="fade-up">
+    <Box data-aos="fade-up" sx={{ px: { xs: 2, lg: 0, xl: 0 } }}>
       <Card
         sx={{
-          width: { md: 510, xl: 600 },
+          width: { lg: 510, xl: 630 },
           transition: 'all 0.3s ease',
         }}
         className="card-section"
@@ -113,7 +113,7 @@ const TechStackAndCertifications: React.FC<Props> = ({ techStack, items }) => {
           >
             <Box
               sx={{
-                mt: { xs: 3, lg: 3, xl: 0 },
+                mt: { xs: 3, lg: 3, xl: 4 },
               }}
             >
               <Box

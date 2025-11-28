@@ -106,7 +106,7 @@ return (
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
     }}
   >
-    <Container maxWidth="xl" sx={{ px: { xs: 0, lg: 10, xl: 7 } }}>
+    <Container maxWidth="xl" sx={{ px: { xs: 0, lg: 10, xl: 12 } }}>
       <Toolbar>
         <Stack
           direction="row"
@@ -123,7 +123,7 @@ return (
                 '&:hover': {
                   backgroundColor: 'transparent',
                 },
-                marginLeft: { xs: 2, sm: 0, lg: 2 },
+                // marginLeft: { xs: 2, sm: 0, lg: 1 },
               }}
             >
               <Image src="/logo.png" alt="Lloyd Sydlik" width={30} height={30} priority />

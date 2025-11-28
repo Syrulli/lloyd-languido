@@ -6,10 +6,10 @@ import { Box, Card, Typography } from '@mui/material';
 const CertificateCard = ({ item }) => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-      <Link href="/certifications" passHref>
+      <Link href='/certifications' passHref>
         <Card
           sx={{
-            width: { lg: 510, xl: 700 },
+            width: { lg: 510, xl: 630 },
             height: { lg: 80, xl: 80 },
             marginBottom: 1.5,
             cursor: 'pointer',
@@ -23,11 +23,11 @@ const CertificateCard = ({ item }) => {
               backgroundColor: 'rgba(255, 255, 255, 0.2)',
             },
           }}
-          className="card-section"
+          className='card-section'
         >
           <Box sx={{ flex: 1, pr: 2 }}>
             <Typography
-              variant="body1"
+              variant='body1'
               sx={{
                 textAlign: 'left',
                 fontSize: '0.8rem',
@@ -37,7 +37,7 @@ const CertificateCard = ({ item }) => {
               {item.text}
             </Typography>
             <Typography
-              variant="body2"
+              variant='body2'
               sx={{
                 textAlign: 'justify',
                 marginTop: '3px',
