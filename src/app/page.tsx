@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import SectionStack from './components/stack/SectionStack';
 import { items, recommendationsGroups, techStack } from '../constant/app';
 import Recommendation from './components/box/Recommendations';
 import TechStackAndCertifications from './components/box/TechStackAndCertifications';
