@@ -57,11 +57,11 @@ const AboutMeTerminalCard = () => {
                             Professionally, I work as a Full-Stack Developer at FortunePay, a fintech company in the Philippines that delivers secure and innovative payment gateway solutions. In this role, I build and maintain high-impact financial systems while collaborating with a development team based in China. My current tech stack includes Flutter and Spring Boot for cross-platform social service applications, and Vue.Js for modern, responsive administrative dashboards and client-facing interfaces.
                             <br />
                             <br />
-                            In addition to my full-time role, I continue freelancing under the collective Lazy Developers, delivering custom solutions for clients such as Manuel L. Quezon University with a focus on responsive design and intuitive UI/UX using Bootstrap,JavaScript and laravel.
+                            In addition to my full-time role, I continue freelancing under the collective Lazy Developers, delivering custom solutions for clients such as Manuel L. Quezon University with a focus on responsive design and intuitive UI/UX using Bootstrap, JavaScript and laravel.
                             <br />
                             <br />
                             {/* One of my proudest achievements is developing a dental condition detection AI powered by a Convolutional Neural Network (CNN) using GoogleI&apos;s Teachable Machine a practical example of applying emerging AI technologies to solve real-world problems. I also demonstrated leadership as the backend team lead at Appcon 2023, a university development competition. */}
-                            With professional experience in fintech, international collaboration, and AI-integrated projects, I&apos;m committed to building scalable, secure, and user-centered solutions that drive real impact.
+                            {/* With professional experience in fintech, international collaboration, and AI-integrated projects, I&apos;m committed to building scalable, secure, and user-centered solutions that drive real impact. */}
                         </Typography>
                     </CardContent>
                 </Box>

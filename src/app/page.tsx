@@ -28,7 +28,7 @@ export default function Home() {
           {/* xl:justify-start */}
           <TechStackAndCertifications techStack={techStack} items={items} />
         </div>
-        <div className="w-full flex justify-center mt-10">
+        <div className="w-full flex justify-center">
           {/* xl:justify-end */}
           <AboutMeTerminalCard />
         </div>
